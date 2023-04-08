@@ -57,11 +57,14 @@ html::-webkit-scrollbar-thumb {
   max-width: 75%;
   margin: 0 auto;
 }
+nav {
+  position: relative;
+}
 
 .unOrderList::after {
   content: "";
   display: block;
-  width: 0 !important;
+  width: 0%;
   height: 2px;
   background-color: red;
   transition: width 0.3s;
@@ -70,11 +73,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .listing .unOrderList:hover::after {
-  width: 100% !important;
+  width: 100%;
   transition: width 0.5s;
-  background-color: red;
+  /* background-color: red; */
 }
 .unOrderList:hover {
   transform: scale(0.9);
-  color: var(--main-color) !important;
+  color: var(--main-color);
 }

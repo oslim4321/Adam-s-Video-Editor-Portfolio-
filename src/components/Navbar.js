@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow">
+    <nav className="bg-white shadow relative">
       <div className="max-w-7xl py-4 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Left section */}
@@ -35,7 +35,7 @@ function Navbar() {
               {NavList.map((elem) => (
                 <Link
                   key={elem.text}
-                  href="/blog"
+                  href={elem.url || "#"}
                   className="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium unOrderList"
                 >
                   {elem.text}
@@ -95,7 +95,7 @@ function Navbar() {
           {NavList.map((elem) => (
             <Link
               key={elem.text}
-              href="/blog"
+              href={elem.url || "#"}
               className="text-gray-800 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
             >
               {elem.text}
