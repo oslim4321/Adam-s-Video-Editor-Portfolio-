@@ -7,7 +7,7 @@ const Navbar = () => {
   // const [showDropDown, setshowDropDown] = useState(false);
   return (
     <header>
-      <nav className="flex px-4 items-center justify-between mx-auto max-w-7xl fixedd top-0 right-0 left-0 z-[999] flex-wrap-reverse">
+      <nav className="container flex px-4 items-center justify-between fixedd top-0 right-0 left-0 z-[999] flex-wrap-reverse">
         <div className="text-lg font-bold md:py-0 py-4 flex justify-between w-40">
           <img src="/images/Logo with text.png" alt="" />
         </div>
