@@ -8,10 +8,10 @@ const HomePage = () => {
     videoRef.current.play();
   }, []);
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen ">
       <video
         ref={videoRef}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-fill"
         muted
         loop
         playsInline // added to enable autoplay on mobile devices
@@ -19,9 +19,9 @@ const HomePage = () => {
         <source src="Videos/HeroBg-WA0039.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
-        <div className="text-white text-5xl font-bold uppercase">
+      <div className="absolute inset-0 bg-black  opacity-70"></div>
+      <div className="absolute md:left-28 inset-0 z-10 flex flex-col items-start justify-center">
+        <div className="text-white text-4xl md:text-7xl font-bold uppercase font-">
           Video production
         </div>
         <div className="text-white text-xl font-semibold">
