@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Line from "./line";
 
 const HomePage = () => {
   const videoRef = useRef(null);
@@ -20,14 +21,17 @@ const HomePage = () => {
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black  opacity-70"></div>
-      <div className="absolute container inset-0 z-10 flex flex-col items-start justify-center">
+
+      <div className="absolute container inset-0 z-10 flex gap-y-6 flex-col items-start justify-center">
         <div className="text-white text-4xl md:text-7xl font-bold uppercase">
           Video production
         </div>
+        <Line />
         <div className="text-white text-xl font-semibold">
           <p>
-            We create story led video &amp; animation for innovators, educators
-            &amp; change makers.
+            Our approach combines expertise & passion with a deep understanding
+            of you and your audience to make videos that engage, inspire people
+            to act.
           </p>
         </div>
       </div>

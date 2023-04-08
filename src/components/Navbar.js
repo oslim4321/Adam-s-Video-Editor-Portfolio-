@@ -11,19 +11,19 @@ function Navbar() {
 
   return (
     <nav className="bg-white shadow">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl py-4 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Left section */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
               <img
-                className="block lg:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                className="block lg:hidden w-28"
+                src="/images/Logo with text.png"
                 alt="Workflow"
               />
               <img
-                className="hidden lg:block h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                className="hidden lg:block w-28"
+                src="/images/Logo with text.png"
                 alt="Workflow"
               />
             </Link>
@@ -36,7 +36,7 @@ function Navbar() {
                 <Link
                   key={elem.text}
                   href="/blog"
-                  className="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium unOrderList"
                 >
                   {elem.text}
                 </Link>
