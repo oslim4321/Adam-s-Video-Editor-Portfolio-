@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div>
       <div className="ml-5">{/* <Line /> */}</div>
       <div className="container">
-        <div className="flex">
+        <div className="flexCenter flex-wrap">
           <div className="md:w-[50%] flex flex-col gap-y-5">
             <p>About Us</p>
             <h2 className="BaseFont">
@@ -41,7 +41,10 @@ const AboutUs = () => {
             </ul>
           </div>
           <div className="md:w-[50%]">
-            <img src="Logo with Background.png" alt="" />
+            <img
+              src="https://media.istockphoto.com/id/1427367636/photo/female-editor-making-video-with-astronauts.jpg?s=612x612&w=0&k=20&c=KVg4MfMX4WYNsDfgbjRzmyNeFaGuf7i0jbQWzgWaqmk="
+              alt=""
+            />
           </div>
         </div>
       </div>
