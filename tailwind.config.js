@@ -19,6 +19,7 @@ module.exports = {
         helvetica: ["Helvetica Now Display"],
         shadows: ["Shadows"],
         firaSans: ["FiraSansExtraCondensed"],
+        firaSansLight: ["FiraSansExtraCondensedLight"],
       },
     },
   },

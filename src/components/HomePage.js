@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="relative h-screen ">
       <video
         ref={videoRef}
-        className="w-full h-full object-fill"
+        className="w-full h-full object-cover"
         muted
         loop
         playsInline // added to enable autoplay on mobile devices
@@ -34,9 +34,7 @@ const HomePage = () => {
             to act.
           </p>
         </div>
-        <button className=" bg-purple-500 py-3 px-7 w-[30%] text-white font-firaSans hover:bg-white">
-          Watch Videos
-        </button>
+        <button className="button w-[30%]">Watch Videos</button>
       </div>
     </div>
   );

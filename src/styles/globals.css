@@ -24,6 +24,10 @@
   font-family: "FiraSansExtraCondensed";
   src: url(../../assets/fonts/FiraSansExtra/FiraSansExtraCondensed-Bold.ttf);
 }
+@font-face {
+  font-family: "FiraSansExtraCondensedLight";
+  src: url(../../assets/fonts/FiraSansExtra/FiraSansExtraCondensed-ExtraLight.ttf);
+}
 
 .flexCenter {
   @apply flex justify-center items-center font-helvetica;
@@ -33,6 +37,12 @@
 }
 .greyText {
   @apply text-[#939090] font-josefin_bold;
+}
+.bigText {
+  @apply text-6xl font-firaSans;
+}
+button {
+  @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-white;
 }
 html,
 body {
@@ -87,4 +97,7 @@ nav {
 .unOrderList:hover {
   transform: scale(0.9);
   color: var(--main-color);
+}
+section {
+  margin: 50px 0;
 }
