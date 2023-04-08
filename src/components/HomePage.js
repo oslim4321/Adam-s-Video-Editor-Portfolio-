@@ -21,7 +21,7 @@ const HomePage = () => {
       </video>
       <div className="absolute inset-0 bg-black  opacity-70"></div>
       <div className="absolute container inset-0 z-10 flex flex-col items-start justify-center">
-        <div className="text-white text-4xl md:text-7xl font-bold uppercase font">
+        <div className="text-white text-4xl md:text-7xl font-bold uppercase">
           Video production
         </div>
         <div className="text-white text-xl font-semibold">
