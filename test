@@ -1,0 +1,7 @@
+<div
+  class="modal modal--video"
+  data-modal="banner-1"
+  data-modal-video='<iframe src="https://player.vimeo.com/video/785980617?h=0c3acb171d&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Neck of the Woods Films - Video Production Showreel 2023"></iframe>'
+>
+  <div class="modal__outer"><div class="modal__inner"></div></div>
+</div>
