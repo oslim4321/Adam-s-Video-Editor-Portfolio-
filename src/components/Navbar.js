@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow relative">
+    <nav className=" bg-slate-800 text-white shadow relative">
       <div className="max-w-7xl py-4 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Left section */}
@@ -36,7 +36,7 @@ function Navbar() {
                 <Link
                   key={elem.text}
                   href={elem.url || "#"}
-                  className="text-gray-800 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium unOrderList"
+                  className="text-white text-lg hover:text-gray-400 px-3 py-2 rounded-md font-medium unOrderList"
                 >
                   {elem.text}
                 </Link>
@@ -49,7 +49,7 @@ function Navbar() {
             <button
               onClick={toggleList}
               type="button"
-              className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -96,7 +96,7 @@ function Navbar() {
             <Link
               key={elem.text}
               href={elem.url || "#"}
-              className="text-gray-800 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-white text-lg hover:text-gray-400 block px-3 py-2 rounded-md font-josefin_bold font-medium"
             >
               {elem.text}
             </Link>

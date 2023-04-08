@@ -5,7 +5,7 @@ const AboutUs = () => {
       <div className="container">
         <div className="flexCenter flex-wrap">
           <div className="md:w-[50%] flex flex-col gap-y-5">
-            <p>About Us</p>
+            <p className="fon font-shadows text-3xl">about us</p>
             <h2 className="BaseFont">
               WE BELIEVE VIDEO SHOULD DELIVER RESULTS
             </h2>

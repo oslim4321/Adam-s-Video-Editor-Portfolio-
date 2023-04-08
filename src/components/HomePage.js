@@ -23,17 +23,20 @@ const HomePage = () => {
       <div className="absolute inset-0 bg-black  opacity-70"></div>
 
       <div className="absolute container inset-0 z-10 flex gap-y-6 flex-col items-start justify-center">
-        <div className="text-white text-4xl md:text-7xl font-bold uppercase">
+        <div className="text-white text-4xl md:text-7xl font-bold uppercase font-firaSans">
           Video production
         </div>
         <Line />
         <div className="text-white text-xl font-semibold">
-          <p>
+          <p className="font text-lg">
             Our approach combines expertise & passion with a deep understanding
             of you and your audience to make videos that engage, inspire people
             to act.
           </p>
         </div>
+        <button className=" bg-purple-500 py-3 px-7 w-[30%] text-white font-firaSans hover:bg-white">
+          Watch Videos
+        </button>
       </div>
     </div>
   );

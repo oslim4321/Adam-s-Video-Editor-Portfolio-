@@ -1,14 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 @font-face {
-  font-family: "Josefin";
-  src: url("/assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");
+  font-family: "Josefin Sans Bold";
+  src: url("../../assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");
 }
 
-/* @font-face {
+@font-face {
   font-family: "Josefin Sans Regular";
   src: url(../../assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf);
 }
@@ -16,16 +15,24 @@
 @font-face {
   font-family: "Helvetica Now Display Regular";
   src: url(../../assets/fonts/Helvetica_Now_Display/HelveticaNowDisplay-Regular.ttf);
-} */
+}
+@font-face {
+  font-family: "Shadows";
+  src: url(../../assets/fonts/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+  font-family: "FiraSansExtraCondensed";
+  src: url(../../assets/fonts/FiraSansExtra/FiraSansExtraCondensed-Bold.ttf);
+}
 
 .flexCenter {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center font-helvetica;
 }
 .BaseFont {
   @apply font-bold text-xl;
 }
 .greyText {
-  @apply text-[#939090];
+  @apply text-[#939090] font-josefin_bold;
 }
 html,
 body {
