@@ -5,10 +5,10 @@
 
 @font-face {
   font-family: "Josefin Sans Bold";
-  src: url("../../assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");
+  src: url("/assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Josefin Sans Regular";
   src: url(../../assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf);
 }
@@ -16,6 +16,10 @@
 @font-face {
   font-family: "Helvetica Now Display Regular";
   src: url(../../assets/fonts/Helvetica_Now_Display/HelveticaNowDisplay-Regular.ttf);
+} */
+
+.flexCenter {
+  @apply flex justify-center items-center;
 }
 html,
 body {
