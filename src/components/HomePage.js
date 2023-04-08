@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Line from "./line";
+import Line from "@/components/Line";
 
 const HomePage = () => {
   const videoRef = useRef(null);

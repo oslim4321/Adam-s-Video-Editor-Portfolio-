@@ -1,4 +1,4 @@
-import Line from "./line";
+import Line from "@/components/Line";
 
 const MyServices = () => {
   return (

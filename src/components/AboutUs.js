@@ -1,9 +1,7 @@
-import Line from "./line";
-
 const AboutUs = () => {
   return (
     <div>
-      <div className="ml-5">{/* <Line /> */}</div>
+      <div className="ml-5"></div>
       <div className="container">
         <div className="flexCenter flex-wrap">
           <div className="md:w-[50%] flex flex-col gap-y-5">
