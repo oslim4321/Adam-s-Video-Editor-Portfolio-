@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React, { useState, useRef, useEffect } from "react";
 
 const Teams = () => {
   let TeamsMem = [
@@ -41,15 +42,45 @@ const Teams = () => {
       ],
     },
   ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+
+  const handlePrevPageClick = () => {
+    setCurrentIndex((prev) => prev - 1);
+  };
+
+  const handleNextPageClick = () => {
+    setCurrentIndex((prev) => prev + 1);
+    console.log(currentIndex);
+  };
+
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollLeft =
+        currentIndex * containerRef.current.offsetWidth;
+    }
+  }, [currentIndex]);
+
   return (
     <section className="md:h-[90vh]">
-      <div className=" flexCentr flex-col gap-y-10 px-10">
+      <div className="relative flexCentr flex-col gap-y-10 px-10">
+        <div
+          onClick={handlePrevPageClick}
+          className="lg:hidden absolute left-0 top-[50%] translate-y-[-50%]"
+        >
+          <i className="text-4xl cursor-pointer bi bi-chevron-left"></i>
+        </div>
         <h1 className=" font-thin bigText text-center">OUR TEAM</h1>
-        <div className="flex gap-x-5 md:justify-center items-center overflow-x-scroll lg:overflow-x-hidden  scroll-smooth snap-mandatory snap-x  no-scrollbar-white">
+
+        <div
+          ref={containerRef}
+          className="relative flex gap-x-5 md:justify-center items-center overflow-x-scroll lg:overflow-x-hidden  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
+        >
           {TeamsMem.map((elem) => (
             <div
               key={elem.id}
-              className="flex-none border border-slate-400 shadow h-[500px] w-80 hover:bg-slate-200 duration-100  transition  ease-in-out"
+              className=" flex-none border border-slate-400 shadow h-[500px] w-80 hover:bg-slate-200 duration-100  transition  ease-in-out"
             >
               <div className="h-[70%]">
                 <img
@@ -79,62 +110,15 @@ const Teams = () => {
             </div>
           ))}
         </div>
-
-        {/* <div class="flex overflow-x-scroll">
-          <div class="flex-none w-80 bg-gray-100 p-4 rounded-md shadow-lg mr-4">
-            <h2 class="text-lg font-semibold mb-2">Card 1</h2>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              tincidunt mauris in nunc lobortis.
-            </p>
-          </div>
-          <div class="flex-none w-80 bg-gray-100 p-4 rounded-md shadow-lg mr-4">
-            <h2 class="text-lg font-semibold mb-2">Card 2</h2>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              tincidunt mauris in nunc lobortis.
-            </p>
-          </div>
-          <div class="flex-none w-80 bg-gray-100 p-4 rounded-md shadow-lg mr-4">
-            <h2 class="text-lg font-semibold mb-2">Card 3</h2>
-            <p class="text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              tincidunt mauris in nunc lobortis.
-            </p>
-          </div>
-        </div> */}
+        <div
+          onClick={handleNextPageClick}
+          className="lg:hidden absolute right-0 top-[50%] translate-y-[-50%]"
+        >
+          <i className="text-4xl cursor-pointer bi bi-chevron-right"></i>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Teams;
-
-// function TeamsMember({ img, name, position, social }) {
-//   return (
-//     <div
-//       //   key={key}
-//       className=" border border-slate-400 shadow h-[500px] w-80 hover:bg-slate-200 duration-100  transition  ease-in-out"
-//     >
-//       <div className="h-[70%]">
-//         <img src={img} alt="" className="w-full h-full object-cover" />
-//       </div>
-//       <div className="h-[30%] flexCenter gap-y-3 flex-col">
-//         <p className="BaseFont font-fikraSans tracking-wider">{name}</p>
-//         <p className="greyText">{position}</p>
-//         <div className="flex gap-x-3">
-//           {social.map((elem, i) => (
-//             <Link href={elem.media}>
-//               <span
-//                 key={i}
-//                 className="w-20 h-20 p-2 text-white bg-purple-500 rounded-full"
-//               >
-//                 <i className={`bi bi-${elem.text}`}></i>
-//               </span>
-//             </Link>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
