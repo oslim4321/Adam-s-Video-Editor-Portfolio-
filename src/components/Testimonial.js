@@ -1,6 +1,6 @@
 const Testimonial = () => {
   return (
-    <section className="bg-black py-20 h-[100vh]">
+    <section className="bg-black py-20 md:h-[100vh]">
       <div className="container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
         <div className="flex flex-col gap-y-10 w-[100%]">
           <p className="font-shadows text-3xl text-white">What Says About Us</p>
