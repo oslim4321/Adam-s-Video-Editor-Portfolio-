@@ -77,14 +77,14 @@ html::-webkit-scrollbar-thumb {
   padding: 0;
 }
 .container {
-  max-width: 75%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 nav {
   position: relative;
 }
 
-.unOrderList::after {
+/* .unOrderList::after {
   content: "";
   display: block;
   width: 0%;
@@ -93,13 +93,12 @@ nav {
   transition: width 0.3s;
   position: absolute;
   bottom: 2px;
-}
-
+} */
+/* 
 .listing .unOrderList:hover::after {
   width: 100%;
   transition: width 0.5s;
-  /* background-color: red; */
-}
+} */
 .unOrderList:hover {
   transform: scale(0.9);
   color: var(--main-color);
