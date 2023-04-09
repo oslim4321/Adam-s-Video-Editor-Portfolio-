@@ -77,7 +77,7 @@ function TeamsMember({ img, name, position, social }) {
         <img src={img} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="h-[30%] flexCenter gap-y-3 flex-col">
-        <p className="BaseFont font-firaSans">{name}</p>
+        <p className="BaseFont font-fikraSans tracking-wider">{name}</p>
         <p className="greyText">{position}</p>
         <div className="flex gap-x-3">
           {social.map((elem, i) => (

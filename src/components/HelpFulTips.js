@@ -7,11 +7,41 @@ const HelpFulTips = () => {
   }
   return (
     <section>
-      <div className="container">
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1">
+      <div className="container py-20">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-x-5">
           <div className="w-[100%]">
-            <img src="/images/camera.jpg" alt="" />
+            {/* <img src="/images/camera.jpg" alt="" /> */}
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    className="d-block w-100"
+                    src="/images/camera.jpg"
+                    alt="First slide"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100"
+                    src="/images/pexels-fauxels-3184465.jpg"
+                    alt="Second slide"
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    className="d-block w-100"
+                    src="/images/pexels-magda-ehlers-1054713.jpg"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className=" w-[100%]">
             <div className="flex justify-between mb-10">
               <button
