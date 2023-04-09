@@ -19,7 +19,7 @@ const AboutUs = () => {
               understanding of you and your audience to make videos that engage,
               inspire and compel people to act.
             </p>
-            <img src="/images/Logo.png" className="w- w-36" alt="" />
+            <img src="/images/Logo.png" className=" w-44" alt="" />
           </div>
           <div className="md:w-[48%]">
             <img

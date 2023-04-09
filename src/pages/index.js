@@ -6,6 +6,7 @@ import AboutUs from "@/components/AboutUs";
 import Testimonial from "@/components/Testimonial";
 import OurImagination from "@/components/OurImagination";
 import HelpFulTips from "@/components/HelpFulTips";
+import Teams from "@/components/Teams";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutUs />
       <OurImagination />
       <HelpFulTips />
+      <Teams />
       <Testimonial />
     </main>
   );
