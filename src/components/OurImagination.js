@@ -2,7 +2,7 @@ import Line from "@/components/Line";
 
 const OurImagination = () => {
   return (
-    <section className="h-[90vh] bg-slate-8l00 ourImagination ">
+    <section className="md:h-[60vh] py-3 bg-slate-8l00 ourImagination ">
       <div className="flex justify-center items-start flex-col gap-y-8 h-full container">
         <div>
           <div className="flex items-center gap-x-4">
@@ -15,7 +15,7 @@ const OurImagination = () => {
             OUR IMAGINATION ON SERVE OF YOUR NEEDS
           </h2>
         </div>
-        <button className="button w-40">Subscribe</button>
+        <button className="button w-40">Explore Portfolio</button>
       </div>
     </section>
   );

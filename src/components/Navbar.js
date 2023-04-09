@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <nav className=" bg-slate-800 text-white shadow relative">
-      <div className="max-w-7xl py-4 mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl py-1 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Left section */}
           <div className="flex-shrink-0 flex items-center">
@@ -48,9 +48,9 @@ function Navbar() {
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={toggleList}
-              type="button"
+              // type="button"
               className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-              aria-expanded="false"
+              // aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {/* Icon when menu is closed. */}
