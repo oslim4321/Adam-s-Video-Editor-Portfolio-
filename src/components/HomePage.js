@@ -34,7 +34,7 @@ const HomePage = () => {
             to act.
           </p>
         </div>
-        <button className="button w-[30%]">Watch Videos</button>
+        <button className="button w-48">Watch Videos</button>
       </div>
     </div>
   );

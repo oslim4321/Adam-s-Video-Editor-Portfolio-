@@ -43,9 +43,9 @@ const HelpFulTips = () => {
           </div>
 
           <div className=" w-[100%]">
-            <div className="flex justify-between mb-10">
+            <div className="flex flex-wrap gap-3 justify-between mb-10">
               <button
-                className={`borderButton ${
+                className={`borderButton flex-1 ${
                   page === "HelpfullTipsComp" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("HelpfullTipsComp")}
@@ -53,7 +53,7 @@ const HelpFulTips = () => {
                 Helpfull Tips
               </button>
               <button
-                className={`borderButton ${
+                className={`borderButton flex-1 ${
                   page === "Question" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("Question")}
@@ -61,7 +61,7 @@ const HelpFulTips = () => {
                 Question
               </button>
               <button
-                className={`borderButton ${
+                className={`borderButton flex-1 ${
                   page === "Product" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("Product")}

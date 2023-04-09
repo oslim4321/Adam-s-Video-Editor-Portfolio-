@@ -45,7 +45,7 @@
   @apply text-6xl font-firaSansLight;
 }
 .borderButton {
-  @apply border border-slate-700 cursor-pointer bg-none py-3 px-7 w-[30%] font-firaSans hover:bg-purple-500 duration-100  transition  ease-in-out;
+  @apply border border-slate-700 cursor-pointer bg-none py-3 px-7 w-40 font-firaSans hover:bg-purple-500 duration-100  transition  ease-in-out;
 }
 .button {
   @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-white;
