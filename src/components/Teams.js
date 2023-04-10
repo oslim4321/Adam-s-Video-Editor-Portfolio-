@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 
@@ -83,11 +84,18 @@ const Teams = () => {
               className=" flex-none border border-slate-400 shadow h-[500px] w-80 hover:bg-slate-200 duration-100  transition  ease-in-out"
             >
               <div className="h-[70%]">
-                <img
+                <Image
                   src={elem.img}
-                  alt=""
+                  alt={elem.name}
+                  width={300}
+                  height={300}
                   className="w-full h-full object-cover"
                 />
+                {/* <img
+                  src={elem.img}
+                  alt={elem.name}
+                  className="w-full h-full object-cover"
+                /> */}
               </div>
               <div className="h-[30%] flexCenter gap-y-3 flex-col">
                 <p className="BaseFont font-fikraSans tracking-wider">

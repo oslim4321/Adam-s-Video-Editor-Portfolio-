@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Testimonial = () => {
   return (
     <section className="bg-black py-20 md:h-[100vh]">
@@ -21,11 +23,18 @@ const Testimonial = () => {
         </div>
         {/* image */}
         <div className="w-[100%]">
-          <img
+          <Image
+            src="/images/pexels-fauxels-3184465.jpg"
+            alt="our clients"
+            width={400}
+            height={400}
+            className="w-full h-full object-cover gap-x-5"
+          />
+          {/* <img
             className="w-full h-full object-cover gap-x-5"
             src="/images/pexels-fauxels-3184465.jpg"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </section>
