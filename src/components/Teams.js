@@ -1,6 +1,6 @@
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useRef, useEffect } from "react";
 
 const Teams = () => {
   let TeamsMem = [
@@ -64,7 +64,7 @@ const Teams = () => {
   }, [currentIndex]);
 
   return (
-    <section className="md:h-[90vh]">
+    <div className="md:h-[90vh]">
       <div className="relative flexCentr flex-col gap-y-10 px-10">
         <div
           onClick={handlePrevPageClick}
@@ -72,11 +72,11 @@ const Teams = () => {
         >
           <i className="text-4xl cursor-pointer bi bi-chevron-left"></i>
         </div>
-        <h1 className=" font-thin bigText text-center">OUR TEAM</h1>
+        <h1 className=" font-thin bigText text-center mb-3">OUR TEAM</h1>
 
         <div
           ref={containerRef}
-          className="relative flex gap-x-5 md:justify-center items-center overflow-x-scroll lg:overflow-x-hidden  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
+          className="relative flex gap-x-7 md:justify-center items-center overflow-x-scroll lg:overflow-x-hidden  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
         >
           {TeamsMem.map((elem) => (
             <div
@@ -125,7 +125,7 @@ const Teams = () => {
           <i className="text-4xl cursor-pointer bi bi-chevron-right"></i>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

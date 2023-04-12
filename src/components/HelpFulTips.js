@@ -13,7 +13,7 @@ const HelpFulTips = () => {
             {/* <img src="/images/camera.jpg" alt="" /> */}
             <div
               id="carouselExampleSlidesOnly"
-              class="carousel slide"
+              className="carousel slide"
               data-ride="carousel"
             >
               <div className="carousel-inner">

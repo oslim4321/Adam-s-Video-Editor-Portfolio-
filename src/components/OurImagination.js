@@ -3,11 +3,11 @@ import Line from "@/components/Line";
 const OurImagination = () => {
   return (
     <section
-      className="md:h-[60vh] py-3 bg-slate-8l00 ourImagination "
+      className="md:h-[40vh] py-3 bg-slate-8l00 ourImagination "
       style={{
         backgroundImage: "url('/images/IMG-20230410-WA0010.jpg')",
-        backgroundRepeat: "none",
-        backgroundPosition: "fixed",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
         objectFit: "fill",
         width: "100%",
         backgroundSize: "cover",

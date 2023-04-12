@@ -1,11 +1,15 @@
 const AboutUs = () => {
   return (
-    <div>
+    <section>
       <div className="ml-5"></div>
       <div className="container">
+        <h1 className=" font-thin bigText text-center capitalize mb-4">
+          about us
+        </h1>
+
         <div className="flex gap-x-5 flex-wrap">
           <div className="md:w-[48%] flex flex-col gap-y-5">
-            <p className=" font-shadows text-3xl">about us</p>
+            {/* <p className=" font-shadows text-3xl">about us</p> */}
             <h2 className="BaseFont">
               WE BELIEVE VIDEO SHOULD DELIVER RESULTS
             </h2>
@@ -19,7 +23,11 @@ const AboutUs = () => {
               understanding of you and your audience to make videos that engage,
               inspire and compel people to act.
             </p>
-            <img src="/images/Logo with text.png" className=" w-60" alt="" />
+            <img
+              src="/images/Logo with text.png"
+              className=" w-60 md:w-[500px] md:mt-10"
+              alt=""
+            />
           </div>
           <div className="md:w-[48%]">
             <img
@@ -47,7 +55,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

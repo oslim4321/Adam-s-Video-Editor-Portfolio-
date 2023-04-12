@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <DefaultSeo
         title="Purple Creation"
-        titleTemplate="%s | TypedByAI"
+        // titleTemplate="%s | TypedByAI"
         openGraph={{
           type: "website",
           locale: "en_IE",
