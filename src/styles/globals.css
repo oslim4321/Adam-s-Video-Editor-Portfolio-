@@ -50,6 +50,9 @@
 .button {
   @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-white;
 }
+.transitioning {
+  @apply transition ease-in-out;
+}
 html,
 body {
   padding: 0;

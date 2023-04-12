@@ -10,8 +10,8 @@ const ContactUs = () => {
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 gap-x-5 md:place-items-center text-white">
           {/* first */}
           <div className="flex gap-x-10">
-            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 rounded-full flexCenter">
-              i
+            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 text-2xl rounded-full flexCenter transition hover:scale-125">
+              <i className="bi bi-telephone-fill"></i>
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">PHONE</span>
@@ -21,8 +21,8 @@ const ContactUs = () => {
           </div>
           {/* first */}
           <div className="flex gap-x-10">
-            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 rounded-full flexCenter">
-              i
+            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 text-2xl rounded-full flexCenter transition hover:scale-125">
+              <i className="bi bi-envelope-fill"></i>
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">E-MAL</span>
@@ -32,8 +32,8 @@ const ContactUs = () => {
           </div>
           {/* first */}
           <div className="flex gap-x-10">
-            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 rounded-full flexCenter">
-              i
+            <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 text-2xl rounded-full flexCenter transition hover:scale-125">
+              <i className="bi bi-geo-alt-fill"></i>
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">LOCATION</span>
