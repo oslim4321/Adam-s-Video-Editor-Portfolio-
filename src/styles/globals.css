@@ -59,6 +59,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  transition: 0.2s linear;
+  scroll-behavior: smooth;
+}
+
 html::-webkit-scrollbar {
   width: 0.2rem;
 }
