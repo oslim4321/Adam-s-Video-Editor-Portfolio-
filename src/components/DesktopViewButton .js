@@ -49,7 +49,6 @@ const DesktopViewAlert = () => {
         // Change the viewport meta tag to disable responsiveness
         const metaViewport = document.querySelector('meta[name="viewport"]');
         metaViewport.content = "width=1200, initial-scale=1.0";
-        document.body.style.zoom = "100%"; // Attempt to set zoom level to 100%
       }
     }, 4000);
   };
@@ -60,6 +59,21 @@ const DesktopViewAlert = () => {
     if (isMobile) {
       showDesktopViewAlert();
     }
+
+    // Add event listener for window resize event
+    const handleWindowResize = () => {
+      if (window.innerWidth < 768) {
+        // Check if the window width is still below the breakpoint for mobile devices
+        console.log("i run");
+        showDesktopViewAlert();
+      }
+    };
+    window.addEventListener("resize", handleWindowResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
   }, []);
 
   return (
