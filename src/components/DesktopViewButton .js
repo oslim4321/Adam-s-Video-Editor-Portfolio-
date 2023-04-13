@@ -49,6 +49,7 @@ const DesktopViewAlert = () => {
         // Change the viewport meta tag to disable responsiveness
         const metaViewport = document.querySelector('meta[name="viewport"]');
         metaViewport.content = "width=1200, initial-scale=1.0";
+        document.body.style.zoom = "100%"; // Attempt to set zoom level to 100%
       }
     }, 4000);
   };
