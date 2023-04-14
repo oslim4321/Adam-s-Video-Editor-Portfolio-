@@ -11,7 +11,7 @@ const DesktopViewAlert = () => {
       if (result) {
         // Change the viewport meta tag to disable responsiveness
         const metaViewport = document.querySelector('meta[name="viewport"]');
-        metaViewport.content = "width=1200, initial-scale=1.0";
+        metaViewport.content = "width=1200";
       }
     }, 4000);
   };
