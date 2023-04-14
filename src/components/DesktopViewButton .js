@@ -11,7 +11,7 @@ const DesktopViewAlert = () => {
       if (result) {
         // Change the viewport meta tag to disable responsiveness
         const metaViewport = document.querySelector('meta[name="viewport"]');
-        metaViewport.content = "width=1200";
+        metaViewport.content = "width=1200, initial-scale=1.0";
       }
     }, 4000);
   };
@@ -28,13 +28,7 @@ const DesktopViewAlert = () => {
     }
   }, []);
 
-  return (
-    // Render your component UI here
-    <div>
-      <p>Welcome to my website!</p>
-      {/* Render other content */}
-    </div>
-  );
+  return null;
 };
 
 export default dynamic(() => Promise.resolve(DesktopViewAlert), {
