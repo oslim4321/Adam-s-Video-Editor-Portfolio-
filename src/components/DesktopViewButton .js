@@ -1,40 +1,3 @@
-// import React, { useEffect } from "react";
-
-// const DesktopViewAlert = () => {
-//   const userAgent = window.navigator.userAgent;
-//   const isMobile = /Mobile/.test(userAgent);
-//   const showDesktopViewAlert = () => {
-//     // Show the alert after a delay of 4 seconds (4000 milliseconds)
-//     setTimeout(() => {
-//       const result = window.confirm(
-//         "Would you like to switch to desktop view?"
-//       );
-//       if (result) {
-//         // Change the viewport meta tag to disable responsiveness
-//         const metaViewport = document.querySelector('meta[name="viewport"]');
-//         metaViewport.content = "width=1200, initial-scale=1.0";
-//       }
-//     }, 4000);
-//   };
-
-//   useEffect(() => {
-//     // Call the function to show the alert when the component mounts it only show if isMobile is true
-//     if (isMobile) {
-//       showDesktopViewAlert();
-//     }
-//   }, []);
-
-//   return (
-//     // Render your component UI here
-//     <div>
-//       <p>Welcome to my website!</p>
-//       {/* Render other content */}
-//     </div>
-//   );
-// };
-
-// export default DesktopViewAlert;
-
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 
@@ -48,32 +11,21 @@ const DesktopViewAlert = () => {
       if (result) {
         // Change the viewport meta tag to disable responsiveness
         const metaViewport = document.querySelector('meta[name="viewport"]');
-        metaViewport.content = "width=1200, initial-scale=1.0";
+        metaViewport.content = "width=1200";
       }
     }, 4000);
   };
+  function fitToScreen() {
+    window.resizeTo(screen.width, screen.height);
+  }
 
   useEffect(() => {
     // Call the function to show the alert when the component mounts, but only on mobile devices
     const isMobile = typeof window !== "undefined" && window.innerWidth < 768; // Set the desired breakpoint for mobile devices
     if (isMobile) {
       showDesktopViewAlert();
+      fitToScreen();
     }
-
-    // Add event listener for window resize event
-    const handleWindowResize = () => {
-      if (window.innerWidth < 768) {
-        // Check if the window width is still below the breakpoint for mobile devices
-        console.log("i run");
-        showDesktopViewAlert();
-      }
-    };
-    window.addEventListener("resize", handleWindowResize);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
   }, []);
 
   return (
