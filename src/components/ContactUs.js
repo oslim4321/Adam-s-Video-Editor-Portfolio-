@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <div className="bg-black h-[70vh] flexCenter">
+    <div className="bg-black h-full py-20 flexCenter">
       <div className="flex container flex-col gap-y-6">
         <h1 className=" font-thin bigText text-center mb-3 text-white">
           CONTACT US

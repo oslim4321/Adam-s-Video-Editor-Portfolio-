@@ -1,6 +1,6 @@
 const SnippetOfOurWork = () => {
   return (
-    <section className="md:h-[100vh]">
+    <section className="md:h-full">
       <div className="container flexCenterk flex items-cenfter flex-col gap-y-10 py-20">
         <h2 className=" font-firaSansLight text-3xl md:text-6xl font-bold text-center">
           SNIPPERT FROM OUR PRODUCTIONS

@@ -64,7 +64,7 @@ const Teams = () => {
   }, [currentIndex]);
 
   return (
-    <div className="md:h-[90vh]">
+    <div className="md:h-full my-5">
       <div className="relative flexCentr flex-col gap-y-10 px-10">
         <div
           onClick={handlePrevPageClick}

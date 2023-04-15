@@ -9,7 +9,7 @@ const HomePage = () => {
     videoRef.current.play();
   }, []);
   return (
-    <div className="relative h-screen ">
+    <div className="relative h-screen md:h-full ">
       <video
         ref={videoRef}
         className="w-full h-full object-cover"
