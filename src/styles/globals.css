@@ -159,3 +159,38 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* hand aninated */
+
+/* Example CSS code for tutorial-content and tutorial-hand elements */
+.tutorial-content {
+  /* Add your styles for tutorial-content element here */
+}
+
+.tutorial-hand {
+  /* Add your styles for tutorial-hand element here */
+}
+
+/* Add the animate-bounce class for bouncing animation effect */
+.animate-bounce {
+  animation-name: bounce;
+  animation-duration: 1s; /* Adjust duration as needed */
+  animation-timing-function: ease-in-out; /* Adjust timing function as needed */
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px); /* Adjust vertical distance of bounce */
+  }
+  60% {
+    transform: translateY(-5px); /* Adjust vertical distance of bounce */
+  }
+}

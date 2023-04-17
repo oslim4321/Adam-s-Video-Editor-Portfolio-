@@ -49,7 +49,7 @@ function Navbar() {
             <button
               onClick={toggleList}
               // type="button"
-              className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="bg-slate-800 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-800 focus:outline-none"
               // aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
