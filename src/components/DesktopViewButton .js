@@ -88,11 +88,26 @@ const DesktopViewAlert = () => {
 
   const userAgent = typeof window !== "undefined" && window.navigator.userAgent;
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     const isMobile = typeof window !== "undefined" && window.innerWidth < 768; // Set the desired breakpoint for mobile devices
+  //     if (isMobile) {
+  //       setShowTutorial(true);
+  //     }
+  //   }, 4000);
+  // }, []);
+
   useEffect(() => {
     setTimeout(() => {
       const isMobile = typeof window !== "undefined" && window.innerWidth < 768; // Set the desired breakpoint for mobile devices
       if (isMobile) {
-        setShowTutorial(true);
+        const result = window.confirm(
+          "This website is best view on desktop mode would you like to switch to desktop view?"
+        );
+        if (result) {
+          handleToggleView();
+          setShowTutorial(true);
+        }
       }
     }, 4000);
   }, []);
