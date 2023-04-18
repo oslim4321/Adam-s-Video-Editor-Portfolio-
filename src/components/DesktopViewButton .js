@@ -62,7 +62,7 @@ import dynamic from "next/dynamic";
 
 const DesktopViewAlert = () => {
   const [isDesktopView, setIsDesktopView] = useState(false);
-  const [showTutorial, setShowTutorial] = useState(true);
+  const [showTutorial, setShowTutorial] = useState(false);
   const [showToggle, setshowToggle] = useState(false);
   const isLaptop =
     typeof window !== "undefined" && /Mac|Windows/.test(navigator.userAgent);
@@ -88,15 +88,6 @@ const DesktopViewAlert = () => {
 
   const userAgent = typeof window !== "undefined" && window.navigator.userAgent;
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     const isMobile = typeof window !== "undefined" && window.innerWidth < 768; // Set the desired breakpoint for mobile devices
-  //     if (isMobile) {
-  //       setShowTutorial(true);
-  //     }
-  //   }, 4000);
-  // }, []);
-
   useEffect(() => {
     setTimeout(() => {
       const isMobile = typeof window !== "undefined" && window.innerWidth < 768; // Set the desired breakpoint for mobile devices
@@ -105,8 +96,10 @@ const DesktopViewAlert = () => {
           "This website is best view on desktop mode would you like to switch to desktop view?"
         );
         if (result) {
-          handleToggleView();
           setShowTutorial(true);
+          if (showTutorial) {
+            handleToggleView();
+          }
         }
       }
     }, 4000);
