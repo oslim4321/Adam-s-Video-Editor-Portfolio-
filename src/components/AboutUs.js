@@ -11,17 +11,28 @@ const AboutUs = () => {
           <div className="md:w-[48%] flex flex-col gap-y-5">
             {/* <p className=" font-shadows text-3xl">about us</p> */}
             <h2 className="BaseFont">
-              WE BELIEVE VIDEO SHOULD DELIVER RESULTS
+              We DELIVER THE BEST WITH YOUR BUDGET AND FULFIL YOUR TARGET
+              AUDIENCE.
             </h2>
             <p className="greyText">
               Our approach combines expertise & passion with a deep
               understanding of you and your audience to make videos that engage,
-              inspire and compel people to act.
+              inspire and compel people to act.We are a team of Video Producers
+              passionate about Creative Video Productions and helping Goal
+              Setters tell their Story Creatively. Good storytelling is a magic
+              wand to unlock the heart of Audiences and Videos are a great and
+              effective way to achieve this. This has always been the core of
+              what we do, every Individual and Business/Organization has a story
+              to tell, and everyone has a goal they’d like to achieve. Through
+              video productions, we help maximize the fulfilment of your goals
+              in any kind of settings you have in prospect. We create
+              people-centric videos and contents that deliver our Client's
+              Prospects so that they can make things happen.
             </p>
             <p className="greyText">
-              Our approach combines expertise & passion with a deep
-              understanding of you and your audience to make videos that engage,
-              inspire and compel people to act.
+              Our approach to serving you combines Professionalism & Passion
+              with a deep understanding of you in your audience mind to make
+              videos that inspires and enable them to engage impressively.
             </p>
             {/* <img
               src="/images/Logo with text.png"

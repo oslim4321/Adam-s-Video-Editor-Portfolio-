@@ -3,12 +3,12 @@ import Link from "next/link";
 const Footer = () => {
   let socialMedia = [
     {
-      icons: "facebook",
-      url: "#",
+      icons: "instagram",
+      url: "https://instagram.com/purplecreations02?igshid=ZDdkNTZiNTM=",
     },
     {
       icons: "facebook",
-      url: "#",
+      url: "https://www.facebook.com/purplecreations02?mibextid=ZbWKwL",
     },
     {
       icons: "twitter",
@@ -16,7 +16,7 @@ const Footer = () => {
     },
     {
       icons: "whatsapp",
-      url: "#",
+      url: "https://wa.me/message/BEGC4272DB67L1",
     },
   ];
   return (

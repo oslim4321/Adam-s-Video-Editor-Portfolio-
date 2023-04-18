@@ -6,14 +6,20 @@ const Teams = () => {
   let TeamsMem = [
     {
       id: 1,
-      img: "/images/man hold camera.jpg",
-      name: "DYLAN GEORGE",
+      img: "/images/Adam pic.jpeg",
+      name: "AZEEZ ADAM",
       position: "Camera Operator",
       socialMedia: [
-        { media: "url", text: "facebook" },
-        { media: "url", text: "linkedin" },
+        {
+          media: "https://www.facebook.com/purplecreations02?mibextid=ZbWKwL",
+          text: "facebook",
+        },
+        {
+          media: "https://instagram.com/purplecreations02?igshid=ZDdkNTZiNTM=",
+          text: "instagram",
+        },
         { media: "url", text: "pinterest" },
-        { media: "url", text: "twitter" },
+        { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
       ],
     },
     {
@@ -24,9 +30,9 @@ const Teams = () => {
       position: "Camera Operator",
       socialMedia: [
         { media: "url", text: "facebook" },
-        { media: "url", text: "linkedin" },
+        { media: "url", text: "instagram" },
         { media: "url", text: "pinterest" },
-        { media: "url", text: "twitter" },
+        { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
       ],
     },
     {
@@ -37,9 +43,9 @@ const Teams = () => {
       position: "Camera Operator",
       socialMedia: [
         { media: "url", text: "facebook" },
-        { media: "url", text: "linkedin" },
+        { media: "url", text: "instagram" },
         { media: "url", text: "pinterest" },
-        { media: "url", text: "twitter" },
+        { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
       ],
     },
   ];
@@ -87,8 +93,8 @@ const Teams = () => {
                 <Image
                   src={elem.img}
                   alt={elem.name}
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover"
                 />
                 {/* <img

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ContactUs = () => {
   return (
     <div className="bg-black h-full py-20 flexCenter">
@@ -15,8 +17,12 @@ const ContactUs = () => {
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">PHONE</span>
-              <span className="text-slate-300">(123) 456-7890;</span>
-              <span className="text-slate-300">(123) 456-7890;</span>
+              <Link href="tel:+2349157744053">
+                <span className="text-slate-300">+2349157744053</span>
+              </Link>
+              <Link href="tel:+2349039831573">
+                <span className="text-slate-300">+2349039831573</span>
+              </Link>
             </div>
           </div>
           {/* first */}
@@ -26,12 +32,16 @@ const ContactUs = () => {
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">E-MAL</span>
-              <span className="text-slate-300">(123) 456-7890;</span>
-              <span className="text-slate-300">(123) 456-7890;</span>
+              <span className="text-slate-300">
+                <Link href="mailto:purplecreations21@gmail.com">
+                  <span>purplecreations21@gmail.com</span>
+                </Link>
+              </span>
+              {/* <span className="text-slate-300">(123) 456-7890;</span> */}
             </div>
           </div>
           {/* first */}
-          <div className="flex gap-x-10">
+          {/* <div className="flex gap-x-10">
             <span className="w-10 h-10 md:w-20 md:h-20 bg-purple-400 text-2xl rounded-full flexCenter transition hover:scale-125">
               <i className="bi bi-geo-alt-fill"></i>
             </span>
@@ -40,7 +50,7 @@ const ContactUs = () => {
               <span className="text-slate-300">iwo road Ibadan</span>
               <span className="text-slate-300">(123) 456-7890;</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

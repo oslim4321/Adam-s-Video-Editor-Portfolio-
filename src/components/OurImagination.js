@@ -19,10 +19,11 @@ const OurImagination = () => {
             <div className="absolute left-10">
               <Line />
             </div>
-            <p className=" font-shadows text-3xl mb-3 text-white">about us</p>
+            <p className=" font-shadows text-3xl mb-3 text-white">PORTFOLIO</p>
           </div>
-          <h2 className=" font-firaSansLight text-3xl md:text-6xl text-white font-bold">
-            OUR IMAGINATION ON SERVE OF YOUR NEEDS
+          <h2 className=" font-firaSansLight text-3xl md:text-5xl text-white font-bold">
+            Here, you can find varieties of Video Projects we have delivered to
+            our Clients globally.
           </h2>
         </div>
         <button className="button w-40">Explore Portfolio</button>
