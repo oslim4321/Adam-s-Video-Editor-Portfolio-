@@ -31,7 +31,7 @@ const ContactUs = () => {
               <i className="bi bi-envelope-fill"></i>
             </span>
             <div className="flex flex-col">
-              <span className="BaseFont mb-4">E-MAL</span>
+              <span className="BaseFont mb-4">E-MAIL</span>
               <span className="text-slate-300">
                 <Link href="mailto:purplecreations21@gmail.com">
                   <span>purplecreations21@gmail.com</span>

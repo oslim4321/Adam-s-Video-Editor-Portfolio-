@@ -56,9 +56,7 @@ const MyServices = () => {
           <Line />
           <h2 className="BaseFont text-center font">EQUIPMENT LEASE</h2>
           <p className="text-center greyText">
-            We work with professional quality camera equipment, such as our
-            Black Magic and Canon 5d MK 3 cameras, used on Hollywood films.We
-            also offer services in leasing out Filming equipment to Professional
+        We also offer services in leasing out Filming equipment to Professional
             Bodies or Individuals. You can book the equipment for your next
             Production with us at fair costs.
           </p>

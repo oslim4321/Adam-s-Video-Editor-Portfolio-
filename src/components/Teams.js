@@ -95,6 +95,7 @@ const Teams = () => {
                   alt={elem.name}
                   width={500}
                   height={500}
+                  priority
                   className="w-full h-full object-cover"
                 />
                 {/* <img

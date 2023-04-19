@@ -5,7 +5,7 @@ const OurImagination = () => {
     <section
       className="md:h-[40vh] py-3 bg-slate-8l00 ourImagination "
       style={{
-        backgroundImage: "url('/images/IMG-20230410-WA0010.jpg')",
+        backgroundImage: "url('/images/imaginationBG.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         objectFit: "fill",
@@ -19,9 +19,9 @@ const OurImagination = () => {
             <div className="absolute left-10">
               <Line />
             </div>
-            <p className=" font-shadows text-3xl mb-3 text-white">PORTFOLIO</p>
+            <p className=" font-shadowsf text-3xl mb-3 text-h">PORTFOLIO</p>
           </div>
-          <h2 className=" font-firaSansLight text-3xl md:text-5xl text-white font-bold">
+          <h2 className=" font-firaSansLight text-2xl md:text-4xl text-white font-bold">
             Here, you can find varieties of Video Projects we have delivered to
             our Clients globally.
           </h2>

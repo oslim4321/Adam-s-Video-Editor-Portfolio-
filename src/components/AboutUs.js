@@ -1,4 +1,10 @@
+import React, {useState} from 'react'
+
 const AboutUs = () => {
+  const [showText, setshowText] = useState(false)
+  function showTxtFunc(){
+    setshowText(!showText)
+  }
   return (
     <section className="my-20">
       <div className="ml-5"></div>
@@ -14,12 +20,17 @@ const AboutUs = () => {
               We DELIVER THE BEST WITH YOUR BUDGET AND FULFIL YOUR TARGET
               AUDIENCE.
             </h2>
-            <p className="greyText">
-              Our approach combines expertise & passion with a deep
-              understanding of you and your audience to make videos that engage,
-              inspire and compel people to act.We are a team of Video Producers
+            <p className="greyText text-justify">
+             We are a team of Video Producers
               passionate about Creative Video Productions and helping Goal
-              Setters tell their Story Creatively. Good storytelling is a magic
+              Setters tell their Story Creativity.
+
+              
+              
+              {
+                showText && 
+                <span>
+                Good storytelling is a magic
               wand to unlock the heart of Audiences and Videos are a great and
               effective way to achieve this. This has always been the core of
               what we do, every Individual and Business/Organization has a story
@@ -27,18 +38,25 @@ const AboutUs = () => {
               video productions, we help maximize the fulfilment of your goals
               in any kind of settings you have in prospect. We create
               people-centric videos and contents that deliver our Client's
-              Prospects so that they can make things happen.
+              Prospects so that they can make things happen.</span>
+
+              }
+               {/*  */}
             </p>
-            <p className="greyText">
+           {showText && <p className="greyText text-justify">
               Our approach to serving you combines Professionalism & Passion
               with a deep understanding of you in your audience mind to make
               videos that inspires and enable them to engage impressively.
-            </p>
-            {/* <img
-              src="/images/Logo with text.png"
-              className=" w-60 md:w-[500px] md:mt-10"
-              alt=""
-            /> */}
+            </p>}
+         {/* <button onClick={showTxtFunc}>see more</button> */}
+        <div class='flex justify-end'>
+           <button
+                onClick={showTxtFunc}
+                className="border border-purple-500 hover:bg-purple-600 font-bold w-[50%] py-2 px-4 rounded-md transition duration-300 ease-in-out"
+              >
+                 {showText ? 'see less' : 'see more' }
+              </button>
+        </div>
           </div>
           <div className="md:w-[48%]">
             <img
