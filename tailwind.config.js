@@ -20,7 +20,6 @@ module.exports = {
         shadows: ["Shadows"],
         firaSans: ["FiraSansExtraCondensed"],
         firaSansLight: ["FiraSansExtraCondensedLight"],
-        montserrat: ["var(--font-montserrat)"],
       },
     },
   },

@@ -6,7 +6,7 @@ const Teams = () => {
   let TeamsMem = [
     {
       id: 1,
-      img: "/images/Adam pic.jpeg",
+      img: "/images/Adams1.jpg",
       name: "AZEEZ ADAM",
       position: "Camera Operator",
       socialMedia: [
@@ -24,7 +24,7 @@ const Teams = () => {
     },
     {
       id: 2,
-      img: "/images/man hold camera.jpg",
+      img: "/images/Adams2.jpg",
       name: "ANN DEAN",
       position: "Motion Graphic Designer",
       position: "Camera Operator",
@@ -37,7 +37,7 @@ const Teams = () => {
     },
     {
       id: 3,
-      img: "/images/man hold camera.jpg",
+      img: "/images/Adams1.jpg",
       name: "DANIELA OBRIEN",
       position: "Scriptwriter",
       position: "Camera Operator",
