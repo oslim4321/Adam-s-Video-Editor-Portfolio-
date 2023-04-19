@@ -27,14 +27,15 @@ const HomePage = () => {
           Video production
         </div>
         <Line />
-        <div className="text-white text-xl font-semibold">
+        <div className="text-white text-xl font-semibold capitalize">
           <p className="font text-lg">
-            Our approach combines expertise & passion with a deep understanding
-            of you and your audience to make videos that engage, inspire people
-            to act.
+            We Tell Stories and sell bussiness strategically with our video production services
           </p>
         </div>
-        <button className="button w-48">Watch Videos</button>
+      <button className="button bg-black text-white letterSpace">
+  place a booking
+</button>
+
       </div>
     </div>
   );

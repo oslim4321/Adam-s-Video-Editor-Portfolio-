@@ -48,10 +48,13 @@
   @apply border border-slate-700 cursor-pointer bg-none py-3 px-7 w-40 font-firaSans hover:bg-purple-500 duration-100  transition  ease-in-out;
 }
 .button {
-  @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-white;
+  @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-purple-700;
 }
 .transitioning {
   @apply transition ease-in-out;
+}
+.letterSpace{
+  @apply duration-500 ease-in-out transform capitalize hover:tracking-widest;
 }
 html,
 body {
@@ -92,21 +95,7 @@ nav {
   position: relative;
 }
 
-/* .unOrderList::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: red;
-  transition: width 0.3s;
-  position: absolute;
-  bottom: 2px;
-} */
-/* 
-.listing .unOrderList:hover::after {
-  width: 100%;
-  transition: width 0.5s;
-} */
+
 .unOrderList:hover {
   transform: scale(0.9);
   color: var(--main-color);

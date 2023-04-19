@@ -3,7 +3,7 @@ const SnippetOfOurWork = () => {
     <section className="md:h-full">
       <div className="container flexCenterk flex items-cenfter flex-col gap-y-10 py-20">
         <h2 className=" font-firaSansLight text-3xl md:text-6xl font-bold text-center">
-          SNIPPERT FROM OUR PRODUCTIONS
+          SNIPPET FROM OUR PRODUCTIONS
         </h2>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-6 place-items-center"> */}
