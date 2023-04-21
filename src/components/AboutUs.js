@@ -12,7 +12,7 @@ const AboutUs = () => {
     <section className="my-20">
       <div className="ml-5" />
       <div className="container">
-        <h1 className="font-thin bigText text-center capitalize mb-4 font-Helvetica">
+        <h1 className="font-thin bigText font-bold text-center capitalize mb-4">
           about us
         </h1>
         

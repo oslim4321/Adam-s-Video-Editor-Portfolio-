@@ -20,6 +20,7 @@ module.exports = {
         shadows: ["Shadows"],
         firaSans: ["FiraSansExtraCondensed"],
         firaSansLight: ["FiraSansExtraCondensedLight"],
+        helvetica: ["Helvetica"],
       },
     },
   },
