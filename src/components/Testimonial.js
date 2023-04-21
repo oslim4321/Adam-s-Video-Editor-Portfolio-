@@ -5,7 +5,7 @@ const Testimonial = () => {
     <div className="bg-black py-10 md:h-[95h]">
       <div className="container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-x-5">
         <div className="flex flex-col gap-y-10 w-[100%]">
-          <p className="font-shadows text-3xl text-white">What Says About Us</p>
+          <p className="text-1xl md:text-3xl text-white">What Says About Us</p>
 
           <h3 className="bigText text-white">TESTIMONIALS</h3>
           <p className="greyText text-white">
