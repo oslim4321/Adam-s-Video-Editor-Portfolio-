@@ -67,7 +67,7 @@ const AboutUs = () => {
                 src="https://media.istockphoto.com/id/1427367636/photo/female-editor-making-video-with-astronauts.jpg?s=612x612&w=0&k=20&c=KVg4MfMX4WYNsDfgbjRzmyNeFaGuf7i0jbQWzgWaqmk="
                 alt=""
                 layout="fill"
-                objectFit="cover"
+            
               />
             </div>
           </div>
