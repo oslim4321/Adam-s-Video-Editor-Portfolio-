@@ -6,7 +6,7 @@
   font-family: "Helvetica";
   src: url("../../assets/fonts/Helvetica_Now_Display/HelveticaNowDisplay-Regular.ttf");
 }
-@font-face {
+/* @font-face {
   font-family: "Josefin Sans Bold";
   src: url("../../assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");
 }
@@ -31,13 +31,13 @@
 @font-face {
   font-family: "FiraSansExtraCondensedLight";
   src: url(../../assets/fonts/FiraSansExtra/FiraSansExtraCondensed-ExtraLight.ttf);
-}
+} */
 
 .flexCenter {
   @apply flex justify-center items-center font-helvetica;
 }
 .BaseFont {
-  @apply font-bold text-xl;
+  @apply font-bold text-xl  font-helvetica;
 }
 .greyText {
   @apply text-[#939090];
@@ -45,14 +45,12 @@
 .bigText {
   @apply text-3xl md:text-6xl font-helvetica;
 }
-.bigTinyText {
-  @apply text-6xl font-firaSansLight;
-}
+
 .borderButton {
-  @apply border border-slate-700 cursor-pointer bg-none py-3 px-7 w-40 font-firaSans hover:bg-purple-500 duration-100  transition  ease-in-out;
+  @apply border border-slate-700 cursor-pointer bg-none py-3 px-7 w-40 hover:bg-purple-500 duration-100  transition  ease-in-out;
 }
 .button {
-  @apply bg-purple-500 py-3 px-7 text-white font-firaSans hover:bg-purple-700;
+  @apply bg-purple-500 py-3 px-7 text-white hover:bg-purple-700;
 }
 .transitioning {
   @apply transition ease-in-out;
@@ -90,6 +88,7 @@ body{
 * {
   margin: 0;
   padding: 0;
+    font-family: Roboto;
 }
 .container {
   max-width: 1300px;

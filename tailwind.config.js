@@ -14,12 +14,12 @@ module.exports = {
       },
 
       fontFamily: {
-        josefin: ["Josefin Sans Regular"],
-        josefin_bold: ["Josefin Sans Bold"],
-        helvetica: ["Helvetica Now Display"],
-        shadows: ["Shadows"],
-        firaSans: ["FiraSansExtraCondensed"],
-        firaSansLight: ["FiraSansExtraCondensedLight"],
+        // josefin: ["Josefin Sans Regular"],
+        // josefin_bold: ["Josefin Sans Bold"],
+        // helvetica: ["Helvetica Now Display"],
+        // shadows: ["Shadows"],
+        // firaSans: ["FiraSansExtraCondensed"],
+        // firaSansLight: ["FiraSansExtraCondensedLight"],
         helvetica: ["Helvetica"],
       },
     },
