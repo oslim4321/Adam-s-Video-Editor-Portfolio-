@@ -10,7 +10,7 @@ const SnippetOfOurWork = () => {
         <div className="flex gap-x-5 md:justify-center items-center overflow-x-scroll lg:overflow-x-hidden  scroll-smooth snap-mandatory snap-x  no-scrollbar-white">
           <div className="flex-none w-full md:w-[600px] flex flex-col gap-y-5 h-full">
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover shadow-lg"
               muted
               loop
               controls
@@ -27,7 +27,7 @@ const SnippetOfOurWork = () => {
           </div>
           <div className="flex-none w-full md:w-[600px] flex flex-col gap-y-5 h-full">
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover shadow-lg"
               muted
               loop
               controls

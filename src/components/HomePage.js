@@ -16,26 +16,27 @@ const HomePage = () => {
         muted
         loop
         playsInline // added to enable autoplay on mobile devices
+        style={{ maxHeight: "100%", maxWidth: "100%" }}
       >
         <source src="Videos/HeroBg-WA0039.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        <img src="images/IMG-20230410-WA0010.jpg" alt="Fallback image" />
       </video>
-      <div className="absolute inset-0 bg-black  opacity-70"></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black  opacity-70"></div>
 
-      <div className="absolute container inset-0 z-10 flex gap-y-6 flex-col items-start justify-center">
+      <div className="absolute container top-0 left-0 right-0 bottom-0 z-10 flex gap-y-6 flex-col items-start justify-center">
         <div className="text-white text-4xl md:text-7xl font-bold uppercase font-helvetica">
           Video production
         </div>
         <Line />
         <div className="text-white text-xl font-semibold capitalize">
           <p className="font text-lg">
-            We Tell Stories and sell bussiness strategically with our video production services
+            We Tell Stories and sell bussiness strategically with our video
+            production services
           </p>
         </div>
-      <button className="button bg-black text-white letterSpace">
-  place a booking
-</button>
-
+        <button className="button bg-black text-white letterSpace">
+          place a booking
+        </button>
       </div>
     </div>
   );
