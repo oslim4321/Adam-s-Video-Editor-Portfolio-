@@ -8,14 +8,16 @@ const MyServices = () => {
         Our Services
       </h1>
       <div className="container grid py-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 gap-6 place-items-start">
-        <div className="flexCenter flex-col gap-y-6 ">
+        <div className="flexCenter flex-col ">
           <Image
             src="/images/mt-1384-home-icon1 (1).png"
             alt="home-icon1"
             width={40}
             height={50}
           />
-          <Line />
+          <div className="my-3">
+            <Line />
+          </div>
           <h2 className="BaseFont text-center">PRODUCTION</h2>
           <p className="text-center greyText">
             We offer Production services which is the first stage in the
@@ -26,14 +28,16 @@ const MyServices = () => {
           </p>
         </div>
         {/* second card */}
-        <div className="flexCenter flex-col gap-y-6 ">
+        <div className="flexCenter flex-col ">
           <Image
             src="/images/mt-1384-home-icon2.png"
             alt="home-icon2"
             width={50}
             height={50}
           />
-          <Line />
+          <div className="my-3">
+            <Line />
+          </div>
           <h2 className="BaseFont text-center font">POST-PRODUCTION</h2>
           <p className="text-center greyText">
             We also offer Post-production services extensively and solely, i.e:
@@ -46,19 +50,21 @@ const MyServices = () => {
           </p>
         </div>
         {/* third card */}
-        <div className="flexCenter flex-col gap-y-6 ">
+        <div className="flexCenter flex-col ">
           <Image
             src="/images/mt-1384-home-icon3.png"
             alt="home-icon3"
             width={50}
             height={50}
           />
-          <Line />
+          <div className="my-3">
+            <Line />
+          </div>
           <h2 className="BaseFont text-center font">EQUIPMENT LEASE</h2>
           <p className="text-center greyText">
-        We also offer services in leasing out Filming equipment to Professional
-            Bodies or Individuals. You can book the equipment for your next
-            Production with us at fair costs.
+            We also offer services in leasing out Filming equipment to
+            Professional Bodies or Individuals. You can book the equipment for
+            your next Production with us at fair costs.
           </p>
         </div>
       </div>

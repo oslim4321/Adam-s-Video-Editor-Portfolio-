@@ -9,7 +9,7 @@ const HelpFulTips = () => {
     <section>
       <div className="container py-20">
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-x-5">
-          <div className="w-[100%]">
+          <div className="w-[100%] mb-3 md:mb-0">
             {/* <img src="/images/camera.jpg" alt="" /> */}
             <div
               id="carouselExampleSlidesOnly"
@@ -69,32 +69,32 @@ const HelpFulTips = () => {
                 Product
               </button>
             </div> */}
-            <div className="flex flex-wrap gap-3 justify-between mb-10">
-  <div
-    className={`border border-purple-700 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
-      page === "HelpfullTipsComp" ? "colorLight" : ""
-    } `}
-    onClick={() => setPageFunc("HelpfullTipsComp")}
-  >
-    Helpful Tips
-  </div>
-  <div
-    className={`border border-purple-700 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
-      page === "Question" ? "colorLight" : ""
-    } `}
-    onClick={() => setPageFunc("Question")}
-  >
-    Question
-  </div>
-  <div
-    className={`border border-purple-700 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
-      page === "Product" ? "colorLight" : ""
-    } `}
-    onClick={() => setPageFunc("Product")}
-  >
-    Product
-  </div>
-</div>
+            <div className="flex flex-wrap gap-y-3 justify-between mb-10">
+              <div
+                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                  page === "HelpfullTipsComp" ? "colorLight" : ""
+                } `}
+                onClick={() => setPageFunc("HelpfullTipsComp")}
+              >
+                Helpful Tips
+              </div>
+              <div
+                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                  page === "Question" ? "colorLight" : ""
+                } `}
+                onClick={() => setPageFunc("Question")}
+              >
+                Question
+              </div>
+              <div
+                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                  page === "Product" ? "colorLight" : ""
+                } `}
+                onClick={() => setPageFunc("Product")}
+              >
+                Product
+              </div>
+            </div>
 
             {page === "HelpfullTipsComp" ? (
               <HelpfullTipsComp />

@@ -115,7 +115,7 @@ const DesktopViewAlert = () => {
           <div className="z-50 absolute">
             <div
               onClick={handleHideTutorial}
-              className="fixed inset-0 bg-gray-900 opacity-75"
+              className="fixed top-0 bottom-0 right-0 left-0 bg-gray-900 opacity-75"
             ></div>
             <div className="w-52 p-2 bg-white fixed top-[60%] right-0  shadow-lg border border-purple-600">
               <div className="tutorial-hand animate-bounce absolutee right-0">

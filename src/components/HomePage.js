@@ -23,13 +23,15 @@ const HomePage = () => {
       </video>
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black  opacity-70"></div>
 
-      <div className="absolute container top-0 left-0 right-0 bottom-0 z-10 flex gap-y-6 flex-col items-start justify-center">
+      <div className="absolute container top-0 left-0 right-0 bottom-0 z-10 flex  flex-col items-start justify-center">
         <div className="text-white text-4xl md:text-7xl font-bold uppercase font-helvetica">
           Video production
         </div>
-        <Line />
+        <div className="my-4">
+          <Line />
+        </div>
         <div className="text-white text-xl font-semibold capitalize">
-          <p className="font text-lg">
+          <p className="font text-lg mb-3">
             We Tell Stories and sell bussiness strategically with our video
             production services
           </p>
