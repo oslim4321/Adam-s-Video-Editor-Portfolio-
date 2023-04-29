@@ -24,18 +24,17 @@ const AboutUs = () => {
               <p className="greyText text-justify">
                 We are a team of Video Producers passionate about Creative Video
                 Productions to help you tell your story cretively. Good
-                storytelling is a magic wand
+                storytelling is a magic wand to unlock the heart of Audiences
                 {showText && (
                   <span>
-                    to unlock the heart of Audiences and Videos are a great and
-                    effective way to achieve this. This has always been the core
-                    of what we do, every Individual and
-                    Business/Company/Organization has a story to tell, and
-                    everyone has a goal they’d like to achieve. Through video
-                    productions, we help maximize the fulfilment of your goals
-                    in any kind of settings you have in prospect. We create
-                    people-centric videos and contents that deliver our Client's
-                    Prospects so that they can make things happen.
+                    and Videos are a great and effective way to achieve this.
+                    This has always been the core of what we do, every
+                    Individual and Business/Company/Organization has a story to
+                    tell, and everyone has a goal they’d like to achieve.
+                    Through video productions, we help maximize the fulfilment
+                    of your goals in any kind of settings you have in prospect.
+                    We create people-centric videos and contents that deliver
+                    our Client's Prospects so that they can make things happen.
                   </span>
                 )}
               </p>
