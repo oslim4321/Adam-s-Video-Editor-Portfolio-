@@ -11,9 +11,9 @@ const Testimonial = () => {
 
           <h3 className="bigText text-white">TESTIMONIALS</h3>
           <p className="greyText text-white">
-            I am writing to thank you again for your excellent work in producing
-            our promotional videos.You and your staff are professional,
-            courteous, and easy to work with.
+            Partnering with you for your Post-production services is one great
+            decision I am glad I made, it has improved the delivery of my Brand
+            over time. Your services are top-notch and satisfactory. Thank you!
           </p>
           <img
             src="/images/mt-1384-home-signature.png"
