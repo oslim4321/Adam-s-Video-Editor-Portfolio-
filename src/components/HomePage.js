@@ -36,7 +36,7 @@ const HomePage = () => {
             with our Video production solutions.
           </p>
         </div>
-        <button className="button bg-black text-white letterSpace">
+        <button className="button text-white letterSpace rounded-md">
           Get in touch
         </button>
       </div>
