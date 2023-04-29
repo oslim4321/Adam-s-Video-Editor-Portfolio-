@@ -6,10 +6,10 @@ const Aside = () => {
   return (
     <aside
       id="default-sidebar"
-      class="fixeed top-0 left-0 z-10  h-screen bg-gray-50"
+      class=" h-screen bg-gray-50"
       aria-label="Sidebar"
     >
-      <div class="h-full px-3 pyd-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 mt-12">
+      <div class="h-full px-3 pyd-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 ">
         <ul class="space-y-2 font-medium">
           <li>
             <Link
