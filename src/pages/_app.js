@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import "@/styles/globals.css";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import image from '@/images/Logo with text.png'
 
@@ -54,7 +55,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <script
+      {/* <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossOrigin="anonymous"
@@ -68,7 +69,12 @@ export default function App({ Component, pageProps }) {
         src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossOrigin="anonymous"
-      ></script>{" "}
+      ></script>{" "} */}
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
     </>
   );
 }
