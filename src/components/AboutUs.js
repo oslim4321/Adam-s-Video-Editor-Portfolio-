@@ -24,7 +24,8 @@ const AboutUs = () => {
               <p className="greyText text-justify">
                 We are a team of Video Producers passionate about Creative Video
                 Productions to help you tell your story cretively. Good
-                storytelling is a magic wand to unlock the heart of Audiences...
+                storytelling is a magic wand to unlock the heart of Audiences{" "}
+                {!showText && "..."}
                 {showText && (
                   <span>
                     and Videos are a great and effective way to achieve this.
