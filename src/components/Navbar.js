@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className=" bg-slate-800 text-white shadow relative">
+    <nav className=" bg-slate-800 text-white shadow relative top-0 z-50">
       <div className="max-w-7xl py-1 mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Left section */}
