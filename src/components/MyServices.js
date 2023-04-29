@@ -55,7 +55,7 @@ const MyServices = () => {
             src="/images/human.png"
             alt="home-icon3"
             width={50}
-            height={30}
+            height={50}
           />
           <div className="my-3">
             <Line />

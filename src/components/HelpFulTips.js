@@ -71,7 +71,7 @@ const HelpFulTips = () => {
             </div> */}
             <div className="flex flex-wrap gap-y-3 justify-between mb-10">
               <div
-                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                className={`border border-purple-700 whitespace-nowrap mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
                   page === "HelpfullTipsComp" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("HelpfullTipsComp")}
@@ -79,7 +79,7 @@ const HelpFulTips = () => {
                 Purple Tips
               </div>
               <div
-                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                className={`border border-purple-700 whitespace-nowrap mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
                   page === "Question" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("Question")}
@@ -87,7 +87,7 @@ const HelpFulTips = () => {
                 FAQ
               </div>
               <div
-                className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
+                className={`border border-purple-700 whitespace-nowrap mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
                   page === "Product" ? "colorLight" : ""
                 } `}
                 onClick={() => setPageFunc("Product")}
