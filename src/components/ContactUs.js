@@ -11,8 +11,9 @@ const ContactUs = () => {
         <section className=" ">
           <div className="px-4 mx-auto max-w-screen-md">
             <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
-              Got a technical issue? Want to send feedback about a beta feature?
-              Need details about our Business plan? Let us know.
+              Do you have a deal you'll like to discuss or Need details on how
+              we can provide a Video Production solution for your Brand? Let us
+              know
             </p>
             <form action="#" className="space-y-3">
               <div>
@@ -26,7 +27,7 @@ const ContactUs = () => {
                   type="email"
                   id="email"
                   className="shadow-sm border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
-                  placeholder="name@flowbite.com"
+                  placeholder="Your Email"
                   required
                 />
               </div>
@@ -78,10 +79,10 @@ const ContactUs = () => {
             </span>
             <div className="flex flex-col">
               <span className="BaseFont mb-4">PHONE</span>
-              <Link href="tel:+2349157744053">
+              <Link className="no-underline" href="tel:+2349157744053">
                 <span className="text-slate-300">+2349157744053</span>
               </Link>
-              <Link href="tel:+2349039831573">
+              <Link className="no-underline" href="tel:+2349039831573">
                 <span className="text-slate-300">+2349039831573</span>
               </Link>
             </div>
@@ -94,7 +95,10 @@ const ContactUs = () => {
             <div className="flex flex-col">
               <span className="BaseFont mb-4">E-MAIL</span>
               <span className="text-slate-300">
-                <Link href="mailto:purplecreations21@gmail.com">
+                <Link
+                  className="no-underline"
+                  href="mailto:purplecreations21@gmail.com"
+                >
                   <span>purplecreations21@gmail.com</span>
                 </Link>
               </span>
