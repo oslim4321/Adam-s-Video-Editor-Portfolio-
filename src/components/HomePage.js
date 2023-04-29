@@ -32,12 +32,12 @@ const HomePage = () => {
         </div>
         <div className="text-white text-xl font-semibold capitalize">
           <p className="font text-lg mb-3">
-            We Tell Stories and sell bussiness strategically with our video
-            production services
+            We Deliver Creative StoryTelling and Strategic Bussiness Promotions
+            with Our Video Production
           </p>
         </div>
         <button className="button bg-black text-white letterSpace">
-          place a booking
+          Get in Touch
         </button>
       </div>
     </div>
