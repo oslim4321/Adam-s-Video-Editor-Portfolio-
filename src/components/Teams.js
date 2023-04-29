@@ -11,15 +11,15 @@ const Teams = () => {
       position: "Camera Operator",
       socialMedia: [
         {
-          media: "https://www.facebook.com/purplecreations02?mibextid=ZbWKwL",
+          media: "https://web.facebook.com/komoniwa1",
           text: "facebook",
         },
         {
-          media: "https://instagram.com/purplecreations02?igshid=ZDdkNTZiNTM=",
+          media: "https://www.instagram.com/komoniwa1/",
           text: "instagram",
         },
-        { media: "url", text: "pinterest" },
-        { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
+        // { media: "url", text: "pinterest" },
+        { media: "https://wa.me/message/BEGC4272DB67L1", text: "twitter" },
       ],
     },
     {
@@ -31,7 +31,7 @@ const Teams = () => {
       socialMedia: [
         { media: "url", text: "facebook" },
         { media: "url", text: "instagram" },
-        { media: "url", text: "pinterest" },
+        // { media: "url", text: "pinterest" },
         { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
       ],
     },
@@ -44,7 +44,7 @@ const Teams = () => {
       socialMedia: [
         { media: "url", text: "facebook" },
         { media: "url", text: "instagram" },
-        { media: "url", text: "pinterest" },
+        // { media: "url", text: "pinterest" },
         { media: "https://wa.me/message/BEGC4272DB67L1", text: "whatsapp" },
       ],
     },

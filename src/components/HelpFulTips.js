@@ -76,7 +76,7 @@ const HelpFulTips = () => {
                 } `}
                 onClick={() => setPageFunc("HelpfullTipsComp")}
               >
-                Helpful Tips
+                Purple Tips
               </div>
               <div
                 className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
@@ -84,7 +84,7 @@ const HelpFulTips = () => {
                 } `}
                 onClick={() => setPageFunc("Question")}
               >
-                Question
+                FAQ
               </div>
               <div
                 className={`border border-purple-700 mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
