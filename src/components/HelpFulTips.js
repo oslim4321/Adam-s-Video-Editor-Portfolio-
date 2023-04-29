@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Accordion, Card, Button } from "react-bootstrap";
+import Question from "./Question";
 
 const HelpFulTips = () => {
   const [page, setpage] = useState("HelpfullTipsComp");
@@ -139,67 +139,36 @@ function HelpfullTipsComp() {
   );
 }
 
-function Question() {
-  return (
-    <div className="flex flex-col gap-y-4">
-      {/* <p className="greyText">
-        Choosing the best camera for your documentary does not necessarily mean
-        choosing the "latest greatest". There are plenty of older model cameras
-        that offer beautiful results. Before the purchase you should answer
-        several questions.
-      </p>
-      <ul>
-        <li className="flex gap-x-5 items-center my-3">
-          <span className="w-3 h-3 p-1 bg-purple-400 rounded-full"></span>
-          <span>
-            VWhere will your video or documentary be shown when it's done?
-          </span>
-        </li>
-        <li className="flex gap-x-5 items-center my-3">
-          <span className="w-3 h-3 p-1 bg-purple-400 rounded-full"></span>
-          <span>How much money are you willing to spend?</span>
-        </li>
-        <li className="flex gap-x-5 items-center my-3">
-          <span className="w-3 h-3 p-1 bg-purple-400 rounded-full"></span>
-          <span>
-            What type of shooting are doing: cinematic/planned shots or run &
-            gun news style?
-          </span>
-        </li>
-        <li className="flex gap-x-5 items-center my-3">
-          <span className="w-3 h-3 p-1 bg-purple-400 rounded-full"></span>
-          <span>
-            What's your editing system and is it capable of handling the video
-            format you are shooting on?
-          </span>
-        </li>
-      </ul> */}
-      <div>
-        <Accordion>
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              TAB 1
-            </Accordion.Toggle>
+// function Question() {
+//   return (
+//     <div className="flex flex-col gap-y-4">
 
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>This is first tab body</Card.Body>
-            </Accordion.Collapse>
-          </Card>
+//       <div>
+//         <Accordion>
+//           <Card>
+//             <Accordion.Toggle as={Card.Header} eventKey="0">
+//               TAB 1
+//             </Accordion.Toggle>
 
-          <Card>
-            <Accordion.Toggle as={Card.Header} eventKey="1">
-              TAB 2
-            </Accordion.Toggle>
+//             <Accordion.Collapse eventKey="0">
+//               <Card.Body>This is first tab body</Card.Body>
+//             </Accordion.Collapse>
+//           </Card>
 
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>This is second tab body</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
-      </div>
-    </div>
-  );
-}
+//           <Card>
+//             <Accordion.Toggle as={Card.Header} eventKey="1">
+//               TAB 2
+//             </Accordion.Toggle>
+
+//             <Accordion.Collapse eventKey="1">
+//               <Card.Body>This is second tab body</Card.Body>
+//             </Accordion.Collapse>
+//           </Card>
+//         </Accordion>
+//       </div>
+//     </div>
+//   );
+// }
 function Product() {
   return (
     <div className="flex flex-col gap-y-4">
