@@ -12,7 +12,7 @@ const MyServices = () => {
           <Image
             src="/images/camera2.png"
             alt="home-icon1"
-            width={40}
+            width={70}
             height={50}
           />
           <div className="my-3">
@@ -32,7 +32,7 @@ const MyServices = () => {
           <Image
             src="/images/laptop.png"
             alt="home-icon2"
-            width={50}
+            width={70}
             height={50}
           />
           <div className="my-3">
