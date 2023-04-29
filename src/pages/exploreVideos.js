@@ -40,10 +40,10 @@ const exploreVideos = () => {
         <div className="col-span-2">
           <Aside />
         </div>
-        <div className="p-1 w-full col-span-10">
+        <div className="p-1 max-w-[95%] mx-auto w-full col-span-10">
           <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-scroll md:overflow-hidden">
-            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
-              <div className="bg-gray-200 h-64 w-full"></div>
+            <div className="bg-white md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 md:w-full w-[250px]"></div>
               <div className="p-4">
                 <h3 className="font-medium text-gray-900">Product 1</h3>
                 <p className="text-gray-500 mt-2">
@@ -53,8 +53,8 @@ const exploreVideos = () => {
               </div>
             </div>
 
-            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
-              <div className="bg-gray-200 h-64 w-full"></div>
+            <div className="bg-white md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 md:w-full w-[250px]"></div>
               <div className="p-4">
                 <h3 className="font-medium text-gray-900">Product 2</h3>
                 <p className="text-gray-500 mt-2">
@@ -64,8 +64,8 @@ const exploreVideos = () => {
               </div>
             </div>
 
-            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
-              <div className="bg-gray-200 h-64 w-full"></div>
+            <div className="bg-white md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 md:w-full w-[250px]"></div>
               <div className="p-4">
                 <h3 className="font-medium text-gray-900">Product 3</h3>
                 <p className="text-gray-500 mt-2">
@@ -75,8 +75,8 @@ const exploreVideos = () => {
               </div>
             </div>
 
-            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
-              <div className="bg-gray-200 h-64 w-full"></div>
+            <div className="bg-white md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 md:w-full w-[250px]"></div>
               <div className="p-4">
                 <h3 className="font-medium text-gray-900">Product 4</h3>
                 <p className="text-gray-500 mt-2">
