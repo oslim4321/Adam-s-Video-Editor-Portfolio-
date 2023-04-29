@@ -19,14 +19,18 @@ const OurImagination = () => {
             <div className="absolute left-10 hidden md:block">
               <Line />
             </div>
-            <p className="font-helvetica font-shadow text-3xl mb-3 text-white">PORTFOLIO</p>
+            <p className="font-helvetica font-shadow text-3xl mb-3 text-white">
+              PORTFOLIO
+            </p>
           </div>
           <h2 className=" text-1xl md:text-3xl text-white font-bold">
             Here, you can find varieties of Video Projects we have delivered to
             our Clients globally.
           </h2>
         </div>
-        <button className="button letterSpace ">Explore Portfolio</button>
+        <button className="button letterSpace rounded-md">
+          Explore Portfolio
+        </button>
       </div>
     </section>
   );
