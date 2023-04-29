@@ -10,7 +10,7 @@ const MyServices = () => {
       <div className="container grid py-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 gap-6 place-items-start">
         <div className="flexCenter flex-col ">
           <Image
-            src="/images/mt-1384-home-icon1 (1).png"
+            src="/images/camera2.png"
             alt="home-icon1"
             width={40}
             height={50}
@@ -30,7 +30,7 @@ const MyServices = () => {
         {/* second card */}
         <div className="flexCenter flex-col ">
           <Image
-            src="/images/mt-1384-home-icon2.png"
+            src="/images/laptop.png"
             alt="home-icon2"
             width={50}
             height={50}
@@ -52,7 +52,7 @@ const MyServices = () => {
         {/* third card */}
         <div className="flexCenter flex-col ">
           <Image
-            src="/images/mt-1384-home-icon3.png"
+            src="/images/human.png"
             alt="home-icon3"
             width={50}
             height={50}
