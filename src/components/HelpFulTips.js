@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Question from "./Question";
+import FAQ from "./FAQ";
 
 const HelpFulTips = () => {
   const [page, setpage] = useState("HelpfullTipsComp");
@@ -100,7 +100,7 @@ const HelpFulTips = () => {
             {page === "HelpfullTipsComp" ? (
               <HelpfullTipsComp />
             ) : page === "Question" ? (
-              <Question />
+              <FAQ />
             ) : page === "Product" ? (
               <Product />
             ) : (

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import "@/styles/globals.css";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // import image from '@/images/Logo with text.png'
 

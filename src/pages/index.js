@@ -9,6 +9,7 @@ import Teams from "@/components/Teams";
 import SnippetOfOurWork from "@/components/SnippetOfOurWork";
 import ContactUs from "@/components/ContactUs";
 import DesktopViewButton from "@/components/DesktopViewButton ";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

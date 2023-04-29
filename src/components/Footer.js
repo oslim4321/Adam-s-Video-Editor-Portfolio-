@@ -20,7 +20,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className=" bg-black border-t border-purple-400">
+    <div className="z-20 bg-black border-t border-purple-400">
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 gap-x-5 md:place-items-center text-white gap-y-10 py-10">
         <div>
           <img src="/images/Logo with text.png" alt="" className="w-60" />
