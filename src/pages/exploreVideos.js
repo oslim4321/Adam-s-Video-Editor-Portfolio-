@@ -2,9 +2,19 @@ import Aside from "@/components/Aside";
 import React from "react";
 
 const exploreVideos = () => {
+  const products = [
+    { id: 1, name: "Product 1", description: "Description for product 1" },
+    { id: 2, name: "Product 2", description: "Description for product 2" },
+    { id: 3, name: "Product 3", description: "Description for product 3" },
+    { id: 4, name: "Product 4", description: "Description for product 4" },
+    { id: 5, name: "Product 5", description: "Description for product 5" },
+    { id: 6, name: "Product 6", description: "Description for product 6" },
+    { id: 7, name: "Product 7", description: "Description for product 7" },
+    { id: 8, name: "Product 8", description: "Description for product 8" },
+  ];
   return (
     <>
-      <button
+      {/* <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
@@ -25,56 +35,59 @@ const exploreVideos = () => {
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
-      </button>
+      </button> */}
+      <div className="grid grid-cols-12 ">
+        <div className="col-span-2">
+          <Aside />
+        </div>
+        <div className="p-1 w-full col-span-10">
+          <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-scroll md:overflow-hidden">
+            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 w-full"></div>
+              <div className="p-4">
+                <h3 className="font-medium text-gray-900">Product 1</h3>
+                <p className="text-gray-500 mt-2">
+                  Description of product 1 goes here.
+                </p>
+                <p className="text-gray-900 font-medium mt-2">$19.99</p>
+              </div>
+            </div>
 
-      <Aside />
-      <div class="p-4 sm:ml-64">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-          <div class="grid grid-cols-3 gap-4 mb-4">
-            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 w-full"></div>
+              <div className="p-4">
+                <h3 className="font-medium text-gray-900">Product 2</h3>
+                <p className="text-gray-500 mt-2">
+                  Description of product 2 goes here.
+                </p>
+                <p className="text-gray-900 font-medium mt-2">$29.99</p>
+              </div>
             </div>
-            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+
+            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 w-full"></div>
+              <div className="p-4">
+                <h3 className="font-medium text-gray-900">Product 3</h3>
+                <p className="text-gray-500 mt-2">
+                  Description of product 3 goes here.
+                </p>
+                <p className="text-gray-900 font-medium mt-2">$39.99</p>
+              </div>
             </div>
-            <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-          </div>
-          <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-          </div>
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-          </div>
-          <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-          </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
-            </div>
-            <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-              <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
+
+            <div className="bg-white w-[100%] md:w-full shadow rounded-lg">
+              <div className="bg-gray-200 h-64 w-full"></div>
+              <div className="p-4">
+                <h3 className="font-medium text-gray-900">Product 4</h3>
+                <p className="text-gray-500 mt-2">
+                  Description of product 4 goes here.
+                </p>
+                <p className="text-gray-900 font-medium mt-2">$49.99</p>
+              </div>
             </div>
           </div>
+
+          {/* <!-- Repeat this HTML for each product --> */}
         </div>
       </div>
     </>
