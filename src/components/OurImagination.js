@@ -1,4 +1,5 @@
 import Line from "@/components/Line";
+import Link from "next/link";
 
 const OurImagination = () => {
   return (
@@ -28,9 +29,11 @@ const OurImagination = () => {
             our Clients globally.
           </h2>
         </div>
-        <button className="button letterSpace rounded-md">
-          Explore Portfolio
-        </button>
+        <Link className="no-underline" href="exploreVideos">
+          <button className="button letterSpace rounded-md">
+            Explore Portfolio
+          </button>
+        </Link>
       </div>
     </section>
   );

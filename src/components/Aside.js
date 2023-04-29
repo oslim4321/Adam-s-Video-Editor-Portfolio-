@@ -17,7 +17,7 @@ const Aside = () => {
               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
             >
               <i className="bi bi-camera-reels-fill"></i>
-              <span class="hidden md:block ml-3">Dashboard</span>
+              <span class="hidden md:block ml-3">Post Production</span>
             </Link>
           </li>
 
@@ -28,7 +28,7 @@ const Aside = () => {
             >
               <i className="bi bi-camera-reels-fill"></i>
               <span class="hidden md:block flex-1 ml-3 whitespace-nowrap">
-                Users
+                Post Production
               </span>
             </Link>
           </li>
@@ -39,7 +39,7 @@ const Aside = () => {
             >
               <i className="bi bi-camera-reels-fill"></i>
               <span class="hidden md:block flex-1 ml-3 whitespace-nowrap">
-                Products
+                Post Production
               </span>
             </Link>
           </li>

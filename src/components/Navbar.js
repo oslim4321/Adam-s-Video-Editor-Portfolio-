@@ -31,7 +31,7 @@ function Navbar() {
 
           {/* Right section */}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 no-underline flex items-baseline space-x-4">
               {NavList.map((elem) => (
                 <Link
                   key={elem.text}
@@ -96,7 +96,7 @@ function Navbar() {
             <Link
               key={elem.text}
               href={elem.url || "#"}
-              className="text-white text-lg hover:text-gray-400 block px-3 py-2 rounded-md font-josefin_bold font-medium"
+              className="text-white no-underline text-lg hover:text-gray-400 block px-3 py-2 rounded-md font-josefin_bold font-medium"
             >
               {elem.text}
             </Link>
