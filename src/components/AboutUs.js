@@ -65,9 +65,15 @@ const AboutUs = () => {
           </div>
           <div className="md:w-[48%]  overflow-hidden">
             <div className="relative w-full h-full">
-              <img
+              {/* <img
                 className="shadow-lg w-full hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl"
                 src="https://media.istockphoto.com/id/1427367636/photo/female-editor-making-video-with-astronauts.jpg?s=612x612&w=0&k=20&c=KVg4MfMX4WYNsDfgbjRzmyNeFaGuf7i0jbQWzgWaqmk="
+                alt=""
+                layout="fill"
+              /> */}
+              <img
+                className="shadow-lg w-full hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl"
+                src="/images/IMG-20230429-WA0070.jpg"
                 alt=""
                 layout="fill"
               />

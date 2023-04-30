@@ -10,7 +10,6 @@ const HelpFulTips = () => {
       <div className="container py-20">
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-x-5">
           <div className="w-[100%] mb-3 md:mb-0">
-            {/* <img src="/images/camera.jpg" alt="" /> */}
             <div
               id="carouselExampleSlidesOnly"
               className="carousel slide"
@@ -20,15 +19,15 @@ const HelpFulTips = () => {
                 <div className="carousel-item active">
                   <img
                     className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                    src="/images/camera.jpg"
-                    alt="First slide"
+                    src="/images/purple-cloth.jpg"
+                    alt="Second slide"
                   />
                 </div>
                 <div className="carousel-item">
                   <img
                     className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                    src="/images/pexels-fauxels-3184465.jpg"
-                    alt="Second slide"
+                    src="/images/camera.jpg"
+                    alt="First slide"
                   />
                 </div>
                 <div className="carousel-item">
