@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "react-bootstrap";
 
 const HelpFulTips = () => {
   const [page, setpage] = useState("HelpfullTipsComp");
@@ -118,8 +117,6 @@ export default HelpFulTips;
 function HelpfullTipsComp() {
   return (
     <div className="flex flex-col gap-y-4">
-      <Button variant="primary">Click me</Button>
-
       <p className="greyText">
         Web video is capable of streaming anything from 240p to 4k resolution.
         Obviously, the higher the resolution the better it will look, especially
@@ -146,6 +143,7 @@ function Question() {
     <div className="flex flex-col gap-y-4">
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
+          <h1>FAQ</h1>
           <h2 className="accordion-header">
             <button
               className="accordion-button"
@@ -164,8 +162,8 @@ function Question() {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
               classNamees that we use to style each element. These classNamees
               control the overall appearance, as well as the showing and hiding
               via CSS transitions. You can modify any of this with custom CSS or

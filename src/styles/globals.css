@@ -55,7 +55,7 @@
 .transitioning {
   @apply transition ease-in-out;
 }
-.letterSpace{
+.letterSpace {
   @apply duration-500 ease-in-out transform capitalize hover:tracking-widest;
 }
 html,
@@ -82,13 +82,13 @@ html::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 5rem;
 }
-body{
+body {
   font-family: Roboto san-serif;
 }
 * {
   margin: 0;
   padding: 0;
-    font-family: Roboto;
+  font-family: Roboto;
 }
 .container {
   max-width: 1300px;
@@ -97,7 +97,6 @@ body{
 nav {
   position: relative;
 }
-
 
 .unOrderList:hover {
   transform: scale(0.9);
@@ -114,8 +113,7 @@ section {
 .colorLight {
   border: 2px solid transparent;
   position: relative;
-    box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
-
+  box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
 }
 
 .colorLight:before {
@@ -133,34 +131,31 @@ section {
 
 @keyframes border {
   0% {
-    border-color: #8A2BE2;
-         transform: translate(-5px, -5px);
+    border-color: #8a2be2;
+    transform: translate(-5px, -5px);
     box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
-
   }
   25% {
-    border-color: #FF8C00;
-     transform: translate(5px, -5px);
+    border-color: #ff8c00;
+    transform: translate(5px, -5px);
     box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
   }
   50% {
-    border-color: #FFEF00;
-     transform: translate(5px, 5px);
+    border-color: #ffef00;
+    transform: translate(5px, 5px);
     box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
   }
   75% {
     border-color: #008000;
-      transform: translate(-5px, 5px);
+    transform: translate(-5px, 5px);
     box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
   }
   100% {
-    border-color: #0000FF;
-       transform: translate(-5px, -5px);
+    border-color: #0000ff;
+    transform: translate(-5px, -5px);
     box-shadow: 0px 0px 10px rgba(138, 43, 226, 0.5);
-
   }
 }
-
 
 .video-container {
   overflow: hidden;
@@ -228,4 +223,10 @@ section {
   60% {
     transform: translateY(-5px); /* Adjust vertical distance of bounce */
   }
+}
+.accordion-collapse {
+  visibility: visible !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
 }
