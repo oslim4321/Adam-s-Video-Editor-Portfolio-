@@ -21,6 +21,7 @@ module.exports = {
         // firaSans: ["FiraSansExtraCondensed"],
         // firaSansLight: ["FiraSansExtraCondensedLight"],
         helvetica: ["Helvetica"],
+        BrunoAce: ["BrunoAceSC"],
       },
     },
   },

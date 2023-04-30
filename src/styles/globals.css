@@ -6,6 +6,10 @@
   font-family: "Helvetica";
   src: url("../../assets/fonts/Helvetica_Now_Display/HelveticaNowDisplay-Regular.ttf");
 }
+@font-face {
+  font-family: "BrunoAceSC";
+  src: url("../../assets/fonts/BrunoAceSC-Regular.ttf");
+}
 /* @font-face {
   font-family: "Josefin Sans Bold";
   src: url("../../assets/fonts/Josefin_Sans/JosefinSans-Bold.ttf");

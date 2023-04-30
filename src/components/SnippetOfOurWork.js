@@ -2,7 +2,7 @@ const SnippetOfOurWork = () => {
   return (
     <section className="md:h-full">
       <div className="container flexCenterk flex items-cenfter flex-col gap-y-10 py-20">
-        <h2 className="font-helvetica text-3xl md:text-6xl font-bold text-center">
+        <h2 className="text-2xl md:text-5xl font-bold text-center font-BrunoAce">
           SNIPPET FROM OUR PRODUCTIONS
         </h2>
 
