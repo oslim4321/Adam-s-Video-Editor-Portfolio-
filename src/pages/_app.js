@@ -75,6 +75,11 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
+      <script>
+        // Add this code after the Bootstrap JavaScript file var bootstrapButton
+        = $.fn.button.noConflict() // This line is optional if you have other
+        Bootstrap JS components that may conflict with your JS
+      </script>
     </>
   );
 }
