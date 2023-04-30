@@ -9,65 +9,61 @@ const HelpFulTips = () => {
     <section>
       <div className="container py-20">
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-x-5">
-          <div className="w-[100%] mb-3 md:mb-0">
-            <div
-              id="carouselExampleSlidesOnly"
-              className="carousel slide"
-              data-ride="carousel"
-            >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                    src="/images/purple-cloth.jpg"
-                    alt="Second slide"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                    src="/images/camera.jpg"
-                    alt="First slide"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                    src="/images/pexels-magda-ehlers-1054713.jpg"
-                    alt="Third slide"
-                  />
-                </div>
+          <div
+            id="myCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  src="/images/purple-cloth.jpg"
+                  alt="Second slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  src="/images/camera.jpg"
+                  alt="First slide"
+                />
+              </div>
+              <div className="carousel-item">
+                <img
+                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  src="/images/pexels-magda-ehlers-1054713.jpg"
+                  alt="Third slide"
+                />
               </div>
             </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon text-red-400"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
 
           <div className=" w-[100%]">
-            {/* <div className="flex flex-wrap gap-3 justify-between mb-10">
-              <button
-                className={`borderButton flex-1 ${
-                  page === "HelpfullTipsComp" ? "colorLight" : ""
-                } `}
-                onClick={() => setPageFunc("HelpfullTipsComp")}
-              >
-                Helpfull Tips
-              </button>
-              <button
-                className={`borderButton flex-1 ${
-                  page === "Question" ? "colorLight" : ""
-                } `}
-                onClick={() => setPageFunc("Question")}
-              >
-                Question
-              </button>
-              <button
-                className={`borderButton flex-1 ${
-                  page === "Product" ? "colorLight" : ""
-                } `}
-                onClick={() => setPageFunc("Product")}
-              >
-                Product
-              </button>
-            </div> */}
             <div className="flex flex-wrap gap-y-3 justify-between mb-10">
               <div
                 className={`border border-purple-700 whitespace-nowrap mx-2 cursor-pointer bg-white py-3 px-7 w-40 rounded-md hover:bg-purple-700 hover:text-slate-500 hover:border-purple-900 transition-colors duration-300 ease-in-out flex-1 ${
@@ -142,7 +138,7 @@ function Question() {
     <div className="flex flex-col gap-y-4">
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
-          <h1>FAQ</h1>
+          {/* <h1>FAQ</h1> */}
           <h2 className="accordion-header">
             <button
               className="accordion-button"
