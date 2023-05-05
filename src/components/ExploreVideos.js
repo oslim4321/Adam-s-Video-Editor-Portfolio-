@@ -1,7 +1,8 @@
 import Aside from "@/components/Aside";
-import React from "react";
+import React, { useState } from "react";
 
 const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
+  const [sideBar, setsideBar] = useState(true);
   const products = [
     { id: 1, name: "Product 1", description: "Description for product 1" },
     { id: 2, name: "Product 2", description: "Description for product 2" },
@@ -12,9 +13,13 @@ const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
     { id: 7, name: "Product 7", description: "Description for product 7" },
     { id: 8, name: "Product 8", description: "Description for product 8" },
   ];
+  function toggleSideBar() {
+    setsideBar(!sideBar);
+  }
   return (
     <>
       <button
+        onClick={toggleSideBar}
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
@@ -37,10 +42,16 @@ const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
         </svg>
       </button>
       <div className="grid grid-cols-12 ">
-        <div className="col-span-2">
-          <Aside />
-        </div>
-        <div className="p-1 max-w-[95%] mx-auto w-full col-span-10">
+        {sideBar ? (
+          <div className="col-span-2">
+            <Aside />
+          </div>
+        ) : null}
+        <div
+          className={`p-1 max-w-[95%] mx-auto w-full  ${
+            sideBar ? "col-span-10" : "col-span-12"
+          }`}
+        >
           <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-scroll md:overflow-hidden">
             {videoItems.map((item) => (
               <div
@@ -61,7 +72,7 @@ const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
                       title={item.snippet.title}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                      onLoad={onVideoLoad}
+                      // onLoad={onVideoLoad}
                     ></iframe>
                   )}
                 </div>

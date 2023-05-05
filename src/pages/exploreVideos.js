@@ -33,33 +33,44 @@ import ExploreVideos from "@/components/ExploreVideos";
 import React, { useState } from "react";
 
 export async function getServerSideProps(context) {
-  // Fetch data from an API
-  const res = await fetch(process.env.youtubeurl);
-  const data = await res.json();
+  try {
+    // Fetch data from an API
+    const res = await fetch(process.env.youtubeurl);
+    const data = await res.json();
 
-  // Extract video items
-  const videoItems = data.items;
+    // Extract video items
+    const videoItems = data.items;
 
-  // Pass video items to the page component as props
-  return {
-    props: { videoItems },
-  };
+    // Pass video items to the page component as props
+    return {
+      props: { videoItems },
+    };
+  } catch (error) {
+    // Handle errors here
+    console.error(error);
+    return {
+      props: { videoItems: null, error: "Failed to fetch data" },
+    };
+  }
 }
 
-function VideoList({ videoItems }) {
-  console.log(videoItems);
-  const [loading, setLoading] = useState(true);
+function VideoList({ videoItems, error }) {
+  // console.log(videoItems);
+  const [loading, setLoading] = useState(false);
 
-  function handleVideoLoad() {
+  if (videoItems && loading) {
     setLoading(false);
   }
 
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
   return (
     <div>
       {/* {loading && <div className="spinner">loding</div>} */}
       <ExploreVideos
         videoItems={videoItems}
-        onVideoLoad={handleVideoLoad}
+        // onVideoLoad={handleVideoLoad}
         loading={loading}
       />
     </div>
