@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 // export async function getServerSideProps() {
 //   try {
 //     // Fetch data from an API
-//     const res = await fetch(process.env.youtubeurl);
+//     const res = await fetch(process.env.NEXT_PUBLIC_YOUTUBEURL);
 //     const data = await res.json();
 
 //     // Extract video items

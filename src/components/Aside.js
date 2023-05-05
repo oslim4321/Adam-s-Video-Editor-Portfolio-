@@ -5,7 +5,6 @@ const Aside = ({ setplaylistId }) => {
   const myVariable = process.env.NEXT_PUBLIC_COMMERCIALS;
 
   const [active, setactive] = useState("Commercials");
-  console.log(myVariable, ";ee");
   // transition-transform -translate-x-full sm:translate-x-0
   return (
     <aside
