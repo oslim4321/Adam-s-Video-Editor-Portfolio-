@@ -44,6 +44,7 @@
 // };
 
 // export default Testimonial;
+
 import { useState, useEffect } from "react";
 
 const testimonials = [
@@ -77,6 +78,33 @@ const Testimonial = () => {
     setActiveTestimonial(testimonials[index]);
     return () => clearInterval(intervalId);
   }, [index]);
+
+  let indexText = 0;
+  let wordIndex = -1;
+  let stopint;
+  let res = testimonials.map((elem) => {
+    return elem.text;
+  });
+  // console.log(res);
+  function display() {
+    stopint = setInterval(() => {
+      wordIndex++;
+      // wordIndex++;
+      // if (wordarray[index].length == wordIndex) {
+      //   clearInterval(stopint);
+      //   wordIndex = -1;
+      //   clearText();
+      //   return stopint;
+      // }
+      //
+
+      // document.getElementById("show").innerHTML +=
+      //   wordarray[indexText][wordIndex];
+    }, 200);
+  }
+  useEffect(() => {
+    display();
+  }, []);
 
   return (
     <div className="bg-black py-10 md:h-[95h]">
