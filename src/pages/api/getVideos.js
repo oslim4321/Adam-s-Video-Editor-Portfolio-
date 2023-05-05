@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   let apiUrl;
   if (playlistId.startsWith("PLA")) {
     console.log("i am running");
-    apiUrl = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&key=${process.env.YOUTUBE_API_KEY}`;
+    apiUrl = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=10&key=PLAmG0Hd23HiJ3YeDhx5Yqdt--r998WcTO`;
   } else {
     apiUrl = process.env.NEXT_PUBLIC_YOUTUBEURL;
   }
