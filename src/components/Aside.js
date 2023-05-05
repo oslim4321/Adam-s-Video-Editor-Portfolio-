@@ -28,7 +28,7 @@ const Aside = () => {
             >
               <i className="bi bi-camera-reels-fill"></i>
               <span className="hidden md:block flex-1 ml-3 whitespace-nowrap">
-                Post Production
+                Production
               </span>
             </Link>
           </li>
@@ -39,7 +39,7 @@ const Aside = () => {
             >
               <i className="bi bi-camera-reels-fill"></i>
               <span className="hidden md:block flex-1 ml-3 whitespace-nowrap">
-                Post Production
+                Next Production
               </span>
             </Link>
           </li>

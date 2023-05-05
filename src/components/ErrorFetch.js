@@ -13,6 +13,7 @@ const ErrorFetch = ({ error }) => {
         <p className="text-gray-500 mt-8 py-2 border-y-2 text-center">
           {error}
         </p>
+        <p className="text-gray-500 mt-8 border-y-2 text-center">Try Reload</p>
       </div>
     </div>
   );
