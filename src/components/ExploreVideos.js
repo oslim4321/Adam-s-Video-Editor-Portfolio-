@@ -1,7 +1,7 @@
 import Aside from "@/components/Aside";
 import React, { useState } from "react";
 
-const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
+const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   const [sideBar, setsideBar] = useState(true);
   const products = [
     { id: 1, name: "Product 1", description: "Description for product 1" },
@@ -44,7 +44,7 @@ const ExploreVideos = ({ videoItems, onVideoLoad, loading }) => {
       <div className="grid grid-cols-12 ">
         {sideBar ? (
           <div className="col-span-2">
-            <Aside />
+            <Aside setplaylistId={setplaylistId} />
           </div>
         ) : null}
         <div

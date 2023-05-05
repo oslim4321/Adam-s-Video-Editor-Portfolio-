@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Aside = () => {
+const Aside = ({ setplaylistId }) => {
   // transition-transform -translate-x-full sm:translate-x-0
   return (
     <aside
@@ -21,7 +21,9 @@ const Aside = () => {
             </Link>
           </li>
 
-          <li>
+          <li
+            onClick={() => setplaylistId("PLAmG0Hd23HiJ3YeDhx5Yqdt--r998WcTO")}
+          >
             <Link
               href="#"
               className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -32,7 +34,9 @@ const Aside = () => {
               </span>
             </Link>
           </li>
-          <li>
+          <li
+            onClick={() => setplaylistId("PLAmG0Hd23HiJHWtZyNg0THoD1JHVy0HPW")}
+          >
             <Link
               href="#"
               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"

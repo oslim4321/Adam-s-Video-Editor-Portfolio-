@@ -33,8 +33,9 @@ function VideoList({ videoItems }) {
 
   const fetchVideo = async () => {
     setLoading(true);
+
     try {
-      const res = await fetch(`/api/getVideos`);
+      const res = await fetch(`/api/getVideos?playlistId=${playlistId}`);
       const data = await res.json();
       console.log(data);
       const videoItems = data.items;
@@ -48,7 +49,7 @@ function VideoList({ videoItems }) {
   };
   useEffect(() => {
     fetchVideo();
-  }, []);
+  }, [playlistId]);
 
   if (Error) {
     return <ErrorFetch error={"Failed loading data"} />;
@@ -60,6 +61,7 @@ function VideoList({ videoItems }) {
         videoItems={videoData}
         // onVideoLoad={handleVideoLoad}
         loading={loading}
+        setplaylistId={setplaylistId}
       />
     </div>
   );
