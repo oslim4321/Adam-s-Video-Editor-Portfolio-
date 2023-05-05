@@ -5,3 +5,13 @@
 >
   <div class="modal__outer"><div class="modal__inner"></div></div>
 </div>
+fetch(
+"https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLAmG0Hd23HiJNgyPwCSgRGixPuRW66iRg&maxResults=10&key=AIzaSyAXcq1J0MTDhZjg8Cw2oKi0iZAIg8UOOGI"
+) .then(response => response.json()) .then(json => console.log(json))
+
+<!-- channel A -->
+"PLAmG0Hd23HiJNgyPwCSgRGixPuRW66iRg"
+<!-- channel B -->
+"PLAmG0Hd23HiJHWtZyNg0THoD1JHVy0HPW"
+<!-- channel C -->
+"PLAmG0Hd23HiJ3YeDhx5Yqdt--r998WcTO"
