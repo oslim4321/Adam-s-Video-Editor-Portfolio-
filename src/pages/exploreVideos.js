@@ -29,11 +29,12 @@ function VideoList({ videoItems }) {
   const [loading, setLoading] = useState(false);
   const [videoData, setVideoData] = useState(null);
   const [Error, setError] = useState(false);
+  const [playlistId, setplaylistId] = useState(null);
 
   const fetchVideo = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/getVideos");
+      const res = await fetch(`/api/getVideos`);
       const data = await res.json();
       console.log(data);
       const videoItems = data.items;
