@@ -53,6 +53,7 @@ const Aside = ({ setplaylistId }) => {
           <li
             onClick={() => {
               setplaylistId(process.env.NEXT_PUBLIC_JINGLE);
+              console.log(process.env.NEXT_PUBLIC_JINGLE, "me");
               setactive("Jingles");
             }}
           >
