@@ -29,6 +29,7 @@
 
 // export default MyPage;
 
+import ErrorFetch from "@/components/ErrorFetch";
 import ExploreVideos from "@/components/ExploreVideos";
 import React, { useState } from "react";
 
@@ -63,7 +64,7 @@ function VideoList({ videoItems, error }) {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <ErrorFetch error={error} />;
   }
   return (
     <div>
