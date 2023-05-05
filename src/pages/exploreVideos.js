@@ -37,12 +37,10 @@ function VideoList({ videoItems }) {
     try {
       const res = await fetch(`/api/getVideos?playlistId=${playlistId}`);
       const data = await res.json();
-      console.log(data);
       const videoItems = data.items;
       setVideoData(videoItems);
     } catch (error) {
       setError(true);
-      console.log(error);
     } finally {
       setLoading(false);
     }

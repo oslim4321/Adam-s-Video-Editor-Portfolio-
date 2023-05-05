@@ -66,7 +66,6 @@ const DesktopViewAlert = () => {
   const [showToggle, setshowToggle] = useState(false);
   const isLaptop =
     typeof window !== "undefined" && /Mac|Windows/.test(navigator.userAgent);
-  console.log(navigator.userAgent);
   useEffect(() => {
     if (!isLaptop) {
       setshowToggle(true);
