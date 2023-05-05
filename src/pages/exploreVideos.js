@@ -30,7 +30,7 @@
 // export default MyPage;
 
 import ExploreVideos from "@/components/ExploreVideos";
-import React from "react";
+import React, { useState } from "react";
 
 export async function getServerSideProps(context) {
   // Fetch data from an API
@@ -48,9 +48,20 @@ export async function getServerSideProps(context) {
 
 function VideoList({ videoItems }) {
   console.log(videoItems);
+  const [loading, setLoading] = useState(true);
+
+  function handleVideoLoad() {
+    setLoading(false);
+  }
+
   return (
     <div>
-      <ExploreVideos videoItems={videoItems} />
+      {/* {loading && <div className="spinner">loding</div>} */}
+      <ExploreVideos
+        videoItems={videoItems}
+        onVideoLoad={handleVideoLoad}
+        loading={loading}
+      />
     </div>
   );
 }
