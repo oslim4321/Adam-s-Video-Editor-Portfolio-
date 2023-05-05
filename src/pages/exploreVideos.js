@@ -38,7 +38,6 @@ function VideoList({ videoItems }) {
       console.log(data);
       const videoItems = data.items;
       setVideoData(videoItems);
-      console.log(videoItems, "me");
     } catch (error) {
       setError(true);
       console.log(error);

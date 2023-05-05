@@ -5,6 +5,8 @@
 >
   <div class="modal__outer"><div class="modal__inner"></div></div>
 </div>
+// /* //
+"https://youtube.googleapis.com/youtube/v3/playlists?channelId=UCRlV33-dIWOkQlex3XkC7Dw&key=AIzaSyAXcq1J0MTDhZjg8Cw2oKi0iZAIg8UOOGI"
 fetch(
 "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLAmG0Hd23HiJNgyPwCSgRGixPuRW66iRg&maxResults=10&key=AIzaSyAXcq1J0MTDhZjg8Cw2oKi0iZAIg8UOOGI"
 ) .then(response => response.json()) .then(json => console.log(json))
