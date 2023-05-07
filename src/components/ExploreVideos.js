@@ -60,27 +60,50 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
           }`}
         >
           <h1 className="my-2">{active} Videos</h1>
-          <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-x-scroll md:overflow-hidden">
-            {loading && (
+          {/* scrolling grid */}
+          {/* <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-x-scroll md:overflow-hidden">
+            {!loading ? (
+              videoItems?.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-white md:w-full shadow rounded-lg"
+                >
+                  <div className="bg-gray-200 h-64 md:w-full w-[300px]">
+                    <iframe
+                      className="w-full h-full object-cover "
+                      // width="100"
+                      // height="315"
+                      src={`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
+                      title={item.snippet.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      // onLoad={onVideoLoad}
+                    ></iframe>
+                  </div>
+                  <div className="p-4">
+                    <h2>{item.snippet.title}</h2>
+                    <p>{item.snippet.description.slice(0, 150)}...</p>
+                  </div>
+                </div>
+              ))
+            ) : (
               <div className="flex justify-center items-center h-full">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+                loading...
               </div>
             )}
+          </div> */}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {videoItems?.map((item) => (
-              <div
-                key={item.id}
-                className="bg-white md:w-full shadow rounded-lg"
-              >
-                <div className="bg-gray-200 h-64 md:w-full w-[300px]">
+              <div key={item.id} className="bg-white shadow rounded-lg">
+                <div className="bg-gray-200 h-64">
                   <iframe
-                    className="w-full h-full object-cover "
-                    // width="100"
-                    // height="315"
+                    className="w-full h-full object-cover"
                     src={`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
                     title={item.snippet.title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    // onLoad={onVideoLoad}
                   ></iframe>
                 </div>
                 <div className="p-4">
