@@ -96,7 +96,7 @@ const Teams = () => {
 
         <div
           ref={containerRef}
-          className="relative max-w-7xl mx-auto  flex gap-x-7 md:justify-center items-center overflow-y-hidden overflow-x-scroll lg:overflow-x-hiddenf  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
+          className="relative max-w-7xl mx-auto py-4 flex gap-x-7 md:justify-center items-center overflow-y-hidden overflow-x-scroll lg:overflow-x-hiddenf  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
         >
           {TeamsMem.map((elem) => (
             <div

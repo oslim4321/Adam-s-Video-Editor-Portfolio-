@@ -17,21 +17,21 @@ const HelpFulTips = () => {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  className="d-block w-100 h-75 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
                   src="/images/purple-cloth.jpg"
                   alt="Second slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  className="d-block w-100 h-75 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
                   src="/images/camera.jpg"
                   alt="First slide"
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
+                  className="d-block w-100 h-75 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
                   src="/images/man-holding-camera.jpg"
                   alt="Third slide"
                 />
