@@ -24,7 +24,6 @@ export default function Home() {
       <Testimonial />
       <SnippetOfOurWork />
       <ContactUs />
-      <DesktopViewButton />
     </main>
   );
 }

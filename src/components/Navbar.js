@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { NavList } from "../../lib/NavList";
+import ScrollToTopButton from "./ScrollToTopButton";
+import DesktopViewButton from "./DesktopViewButton ";
 
 function Navbar() {
   const [showList, setShowList] = useState(false);
@@ -103,6 +105,8 @@ function Navbar() {
           ))}
         </div>
       </div>
+      <ScrollToTopButton />
+      <DesktopViewButton />
     </nav>
   );
 }
