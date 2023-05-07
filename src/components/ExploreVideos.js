@@ -21,12 +21,11 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   return (
     <>
       {/* open sidde bar button */}
-      <button
+      <div
         onClick={toggleSideBar}
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
         aria-controls="default-sidebar"
-        type="button"
         className="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
         <span className="sr-only">Open sidebar</span>
@@ -43,7 +42,7 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
-      </button>
+      </div>
       <div className="grid grid-cols-12 ">
         {sideBar ? (
           <div className="col-span-2">
@@ -59,7 +58,11 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             sideBar ? "col-span-10" : "col-span-12"
           }`}
         >
-          <h1 className="my-2">{active} Videos</h1>
+          <h1 className="my-2 text-3xl md:text-4xl font-bold relative">
+            <span className=" bg-gradient-to-r text-transparent bg-clip-text animate-gradient-x">
+              {active} Videos
+            </span>
+          </h1>
           {/* scrolling grid */}
           {/* <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-x-scroll md:overflow-hidden">
             {!loading ? (
@@ -93,7 +96,6 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
               </div>
             )}
           </div> */}
-
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {videoItems?.map((item) => (
               <div key={item.id} className="bg-white shadow rounded-lg">
@@ -113,7 +115,6 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
               </div>
             ))}
           </div>
-
           {/* <!-- Repeat this HTML for each product --> */}
         </div>
       </div>

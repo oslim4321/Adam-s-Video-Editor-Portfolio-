@@ -29,12 +29,12 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           <li
             onClick={() => {
               setplaylistId(process.env.NEXT_PUBLIC_PROMOTION_VIDEO);
-              setactive("Promotional Videos");
+              setactive("Promotional");
             }}
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Promotional Videos" ? "bg-gray-200" : ""
+                active === "Promotional" ? "bg-gray-200" : ""
               } `}
             >
               <i className=" text-lg bi bi-play-btn"></i>
