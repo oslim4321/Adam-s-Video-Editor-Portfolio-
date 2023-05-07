@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-const Aside = ({ setplaylistId }) => {
-  const [active, setactive] = useState("Commercials");
+const Aside = ({ setplaylistId, active, setactive }) => {
   // transition-transform -translate-x-full sm:translate-x-0
   return (
     <aside
@@ -12,7 +11,6 @@ const Aside = ({ setplaylistId }) => {
       <div className="h-full bg-gray-50 dark:bg-gray-800 ">
         <ul className="space-y-2 font-medium py-4">
           <li
-            className="flex justify-center items-center"
             onClick={() => {
               setplaylistId(process.env.NEXT_PUBLIC_COMMERCIALS);
               setactive("Commercials");
@@ -20,7 +18,7 @@ const Aside = ({ setplaylistId }) => {
           >
             <div
               href="#"
-              className={`flex items-center pr-2  py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
+              className={`flex items-center  py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
                 active === "Commercials" ? "bg-gray-200" : ""
               } `}
             >
@@ -30,7 +28,6 @@ const Aside = ({ setplaylistId }) => {
           </li>
 
           <li
-            className="flex justify-center items-center"
             onClick={() => {
               setplaylistId(process.env.NEXT_PUBLIC_PROMOTION_VIDEO);
               setactive("Promotional Videos");
@@ -38,7 +35,7 @@ const Aside = ({ setplaylistId }) => {
           >
             <div
               href="#"
-              className={`flex items-center pr-2 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
+              className={`flex items-center py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
                 active === "Promotional Videos" ? "bg-gray-200" : ""
               } `}
             >
@@ -49,7 +46,6 @@ const Aside = ({ setplaylistId }) => {
             </div>
           </li>
           <li
-            className="flex justify-center items-center"
             onClick={() => {
               setplaylistId(process.env.NEXT_PUBLIC_JINGLE);
               setactive("Jingles");
@@ -57,7 +53,7 @@ const Aside = ({ setplaylistId }) => {
           >
             <div
               href="#"
-              className={`flex items-center pr-2 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
+              className={`flex items-center py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
                 active === "Jingles" ? "bg-gray-200" : ""
               } `}
             >

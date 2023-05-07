@@ -3,6 +3,8 @@ import React, { useState } from "react";
 
 const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   const [sideBar, setsideBar] = useState(true);
+  const [active, setactive] = useState("Commercials");
+
   const products = [
     { id: 1, name: "Product 1", description: "Description for product 1" },
     { id: 2, name: "Product 2", description: "Description for product 2" },
@@ -18,6 +20,7 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   }
   return (
     <>
+      {/* open sidde bar button */}
       <button
         onClick={toggleSideBar}
         data-drawer-target="default-sidebar"
@@ -44,7 +47,11 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
       <div className="grid grid-cols-12 ">
         {sideBar ? (
           <div className="col-span-2">
-            <Aside setplaylistId={setplaylistId} />
+            <Aside
+              setplaylistId={setplaylistId}
+              active={active}
+              setactive={setactive}
+            />
           </div>
         ) : null}
         <div
@@ -52,7 +59,8 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             sideBar ? "col-span-10" : "col-span-12"
           }`}
         >
-          <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-x-scroll md:overflow-hidden">
+          <h1 className="my-2">{active} Videos</h1>
+          <div className="flex md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 overflow-x-scroll md:overflow-hidden">
             {loading && (
               <div className="flex justify-center items-center h-full">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
@@ -63,7 +71,7 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
                 key={item.id}
                 className="bg-white md:w-full shadow rounded-lg"
               >
-                <div className="bg-gray-200 h-64 md:w-full w-[250px]">
+                <div className="bg-gray-200 h-64 md:w-full w-[300px]">
                   <iframe
                     className="w-full h-full object-cover "
                     // width="100"
