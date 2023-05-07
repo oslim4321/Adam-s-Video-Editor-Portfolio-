@@ -32,7 +32,7 @@ const HelpFulTips = () => {
               <div className="carousel-item">
                 <img
                   className="d-block w-100 hover:scale-110 transition duration-500 ease-in-out transform hover:rotate-6 hover:shadow--xl hover:rounded-xl"
-                  src="/images/pexels-magda-ehlers-1054713.jpg"
+                  src="/images/man-holding-camera.jpg"
                   alt="Third slide"
                 />
               </div>

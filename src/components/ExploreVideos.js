@@ -5,16 +5,6 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   const [sideBar, setsideBar] = useState(true);
   const [active, setactive] = useState("Commercials");
 
-  const products = [
-    { id: 1, name: "Product 1", description: "Description for product 1" },
-    { id: 2, name: "Product 2", description: "Description for product 2" },
-    { id: 3, name: "Product 3", description: "Description for product 3" },
-    { id: 4, name: "Product 4", description: "Description for product 4" },
-    { id: 5, name: "Product 5", description: "Description for product 5" },
-    { id: 6, name: "Product 6", description: "Description for product 6" },
-    { id: 7, name: "Product 7", description: "Description for product 7" },
-    { id: 8, name: "Product 8", description: "Description for product 8" },
-  ];
   function toggleSideBar() {
     setsideBar(!sideBar);
   }
@@ -58,7 +48,7 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             sideBar ? "col-span-10" : "col-span-12"
           }`}
         >
-          <h1 className="my-2 text-3xl md:text-4xl font-bold relative">
+          <h1 className="my-2 text-3xl md: font-bold relative">
             <span className=" bg-gradient-to-r text-transparent bg-clip-text animate-gradient-x">
               {active} Videos
             </span>
@@ -97,23 +87,30 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             )}
           </div> */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
-            {videoItems?.map((item) => (
-              <div key={item.id} className="bg-white shadow rounded-lg">
-                <div className="bg-gray-200 h-64">
-                  <iframe
-                    className="w-full h-full object-cover"
-                    src={`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
-                    title={item.snippet.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+            {!loading ? (
+              videoItems?.map((item) => (
+                <div key={item.id} className="bg-white shadow rounded-lg">
+                  <div className="bg-gray-200 h-64">
+                    <iframe
+                      className="w-full h-full object-cover"
+                      src={`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`}
+                      title={item.snippet.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <div className="p-4">
+                    <h2>{item.snippet.title}</h2>
+                    <p>{item.snippet.description.slice(0, 150)}...</p>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <h2>{item.snippet.title}</h2>
-                  <p>{item.snippet.description.slice(0, 150)}...</p>
-                </div>
+              ))
+            ) : (
+              <div className="flex justify-center items-center h-full">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+                loading...
               </div>
-            ))}
+            )}
           </div>
           {/* <!-- Repeat this HTML for each product --> */}
         </div>
