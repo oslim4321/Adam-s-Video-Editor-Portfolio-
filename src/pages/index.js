@@ -8,7 +8,6 @@ import HelpFulTips from "@/components/HelpFulTips";
 import Teams from "@/components/Teams";
 import SnippetOfOurWork from "@/components/SnippetOfOurWork";
 import ContactUs from "@/components/ContactUs";
-import DesktopViewButton from "@/components/DesktopViewButton ";
 
 const inter = Inter({ subsets: ["latin"] });
 

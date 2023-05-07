@@ -89,15 +89,21 @@ const Teams = () => {
           <i className="text-4xl cursor-pointer bi bi-chevron-left"></i>
         </div>
         <h1 className=" font-thin bigText text-center mb-3">OUR TEAM</h1>
+        <p className="text-gray-700 text-lg font-light text-center max-w-[50%] mx-auto">
+          With over 100 years of combined experience, we've got a well-seasoned
+          team at the helm.
+        </p>
 
         <div
           ref={containerRef}
-          className="relative max-w-7xl mx-auto flex gap-x-7 md:justify-center items-center overflow-y-hidden overflow-x-scroll lg:overflow-x-hiddenf  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
+          className="relative max-w-7xl mx-auto  flex gap-x-7 md:justify-center items-center overflow-y-hidden overflow-x-scroll lg:overflow-x-hiddenf  scroll-smooth snap-mandatory snap-x  no-scrollbar-white"
         >
           {TeamsMem.map((elem) => (
             <div
               key={elem.id}
-              className=" flex-none border border-slate-400 shadow h-[500px] w-80 hover:bg-slate-200 duration-100  transition  ease-in-out"
+              // border border-slate-400 shadow
+              // hover:bg-slate-200
+              className=" flex-none h-[500px] w-80 border duration-100 rounded-2xl transition overflow-hidden ease-in-out"
             >
               <div className="h-[70%]">
                 <Image
@@ -106,7 +112,9 @@ const Teams = () => {
                   width={500}
                   height={500}
                   priority
-                  className="w-full h-full object-cover"
+                  className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-full h-full object-cover hover:shadow-2xl hover:scale-105"
+
+                  // className="w-full h-full object-cover"
                 />
                 {/* <img
                   src={elem.img}
