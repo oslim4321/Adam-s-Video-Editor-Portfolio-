@@ -89,9 +89,9 @@ const Teams = () => {
           <i className="text-4xl cursor-pointer bi bi-chevron-left"></i>
         </div>
         <h1 className=" font-thin bigText text-center mb-3">OUR TEAM</h1>
-        <p className="text-gray-700 text-lg font-light text-center max-w-[50%] mx-auto">
-          With over 100 years of combined experience, we've got a well-seasoned
-          team at the helm.
+        <p className="text-gray-700 text-lg font-light text-center md:w-[50%] mx-auto">
+          With good years of combined experience, we've got a well-seasoned team
+          at the helm.
         </p>
 
         <div
