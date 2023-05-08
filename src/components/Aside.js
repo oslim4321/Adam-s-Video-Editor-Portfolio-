@@ -18,7 +18,7 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Commercials" ? "bg-gray-200 text-black" : ""
+                active === "Commercials" ? "bg-gray-200 text-purple-500" : ""
               } `}
             >
               <i className=" text-lg bi bi-camera-reels-fill"></i>
@@ -34,10 +34,10 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Promotional" ? "bg-gray-200 text-black" : ""
+                active === "Promotional" ? "bg-gray-200 text-purple-500" : ""
               } `}
             >
-              <i className=" text-lg bi bi-play-btn"></i>
+              <i className=" text-lg bi bi-play-btn-fill"></i>
               <span className="hidden md:block flex-1 ml-3 whitespace-nowrap">
                 Promotional Videos
               </span>
@@ -51,7 +51,7 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Jingles" ? "bg-gray-200 text-black" : ""
+                active === "Jingles" ? "bg-gray-200 text-purple-500" : ""
               } `}
             >
               <i className=" text-lg bi bi-bell-fill"></i>
