@@ -18,7 +18,7 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Commercials" ? "bg-gray-200" : ""
+                active === "Commercials" ? "bg-gray-200 text-black" : ""
               } `}
             >
               <i className=" text-lg bi bi-camera-reels-fill"></i>
@@ -34,7 +34,7 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Promotional" ? "bg-gray-200" : ""
+                active === "Promotional" ? "bg-gray-200 text-black" : ""
               } `}
             >
               <i className=" text-lg bi bi-play-btn"></i>
@@ -51,7 +51,7 @@ const Aside = ({ setplaylistId, active, setactive }) => {
           >
             <div
               className={`flex items-center justify-center md:justify-start cursor-pointer -ml-5 px-1 py-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 no-underline ${
-                active === "Jingles" ? "bg-gray-200" : ""
+                active === "Jingles" ? "bg-gray-200 text-black" : ""
               } `}
             >
               <i className=" text-lg bi bi-bell-fill"></i>
