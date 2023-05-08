@@ -1,9 +1,21 @@
 import Aside from "@/components/Aside";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
   const [sideBar, setsideBar] = useState(true);
   const [active, setactive] = useState("Commercials");
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    let timeout;
+    if (videoItems) {
+      setShowText(true);
+      timeout = setTimeout(() => {
+        setShowText(false);
+      }, 10000); // Hide text after 10 seconds
+    }
+    return () => clearTimeout(timeout); // Clear timeout when component unmounts
+  }, [videoItems, active]);
 
   function toggleSideBar() {
     setsideBar(!sideBar);
@@ -48,6 +60,16 @@ const ExploreVideos = ({ videoItems, setplaylistId, loading }) => {
             sideBar ? "col-span-10" : "col-span-12"
           }`}
         >
+          <div>
+            {showText && (
+              <small>
+                If the videos are not playing, try using a different browser or
+                clearing your browser's cache and cookies, then try playing the
+                video again.
+              </small>
+            )}
+            {/* Rest of your page content */}
+          </div>
           <h1 className="my-2 text-3xl md: font-bold relative">
             <span className=" bg-gradient-to-r text-transparent bg-clip-text animate-gradient-x">
               {active} Videos
