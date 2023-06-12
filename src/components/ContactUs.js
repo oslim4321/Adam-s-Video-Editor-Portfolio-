@@ -17,7 +17,7 @@ const ContactUs = () => {
             </p>
             <form
               className="space-y-3"
-              action="https://formsubmit.co/adamazeez2014@gmail.com"
+              action="https://formsubmit.co/purplecreations21@gmail.com"
               method="POST"
             >
               <div>

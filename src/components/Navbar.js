@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="mb-20"></div>
+      <div className="mb-10"></div>
       <nav className=" bg-slate-800 text-white shadow  fixed right-0 left-0 top-0 z-50 ">
         <div className="max-w-7xl py-1 mx-auto px-2 sm:px-6 lg:px-8 relative">
           <div className="flex justify-between h-16">
