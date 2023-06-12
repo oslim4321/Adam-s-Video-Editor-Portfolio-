@@ -77,7 +77,7 @@ const ContactUs = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://purple-creation.vercel.app/EmailSendSuccess"
+                value="https://purple-creation.vercel.app/emailSendSuccess"
               />
               <input type="hidden" name="_template" value="table" />
 
