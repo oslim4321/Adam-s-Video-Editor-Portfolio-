@@ -15,7 +15,11 @@ const ContactUs = () => {
               we can provide a Video Production solution for your Brand? Let us
               know
             </p>
-            <form action="#" className="space-y-3">
+            <form
+              className="space-y-3"
+              action="https://formsubmit.co/adamazeez2014@gmail.com"
+              method="POST"
+            >
               <div>
                 <label
                   htmlFor="email"
@@ -26,6 +30,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="shadow-sm border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                   placeholder="Your Email"
                   required
@@ -41,6 +46,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   className="block p-3 w-full text-sm  rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                   placeholder="Let us know how we can help you"
                   required
@@ -55,11 +61,26 @@ const ContactUs = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="6"
                   className="block p-2.5 w-full text-sm  rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
+              {/* validaa */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Hi Adams's you got a message from your portfolio!"
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://purple-creation.vercel.app/EmailSendSuccess"
+              />
+              <input type="hidden" name="_template" value="table" />
+
               <button
                 type="submit"
                 className="py-3 px-5 text-sm bg-purple-500 font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800"
