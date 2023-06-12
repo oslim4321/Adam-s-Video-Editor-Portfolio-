@@ -12,8 +12,8 @@ function Navbar() {
   };
 
   return (
-    <nav className=" bg-slate-800 text-white shadow relative top-0 z-50">
-      <div className="max-w-7xl py-1 mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className=" bg-slate-800 text-white shadow  fixed right-0 left-0 top-0 z-50 ">
+      <div className="max-w-7xl py-1 mx-auto px-2 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between h-16">
           {/* Left section */}
           <div className="flex-shrink-0 flex items-center">
@@ -38,7 +38,7 @@ function Navbar() {
                 <Link
                   key={elem.text}
                   href={elem.url || "#"}
-                  className="text-white text-lg hover:text-gray-400 px-3 py-2 rounded-md font-medium unOrderList"
+                  className="text-white text-lg hover:text-gray-400 px-3 py-2 rounded-md font-medium unOrderList no-underline"
                 >
                   {elem.text}
                 </Link>

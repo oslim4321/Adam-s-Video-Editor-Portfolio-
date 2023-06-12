@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-900 h-full py-20 flexCenter">
+    <div className="bg-gray-900 h-full py-20 flexCenter" id="contact">
       <div className="flex container flex-col gap-y-4">
         <h1 className=" text-4xl tracking-tight font-extrabold text-center text-white">
           CONTACT US

@@ -4,6 +4,7 @@ import Link from "next/link";
 const OurImagination = () => {
   return (
     <section
+      id="portfolio"
       className="md:h-[40vh] py-3 bg-slate-8l00 ourImagination "
       style={{
         backgroundImage: "url('/images/imaginationBG.jpg')",

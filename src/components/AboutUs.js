@@ -8,7 +8,7 @@ const AboutUs = () => {
   }
 
   return (
-    <section className="my-20">
+    <section className="my-20" id="aboutUs">
       <div className="ml-5" />
       <div className="container">
         <h1 className="font-thin bigText text-center capitalize mb-4">
