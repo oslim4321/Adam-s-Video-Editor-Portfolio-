@@ -53,16 +53,16 @@ const testimonials = [
     text: "Partnering with you for your Post-production services is one great decision I am glad I made, it has improved the delivery of my Brand over time. Your services are top-notch and satisfactory. Thank you!",
     author: "BYGDONALD FILMS",
   },
-  {
-    id: 2,
-    text: "Another testimonial goes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quia quaerat ad ullam. Mollitia fuga omnis commodi deleniti, eligendi sapiente? Molestiae alias enim optio sint at blanditiis ab magnam assumenda porro. Quo officiis nemo, optio quas asperiores accusamus id repudiandae velit doloribus porro, ex sequi fugiat odit dolore sunt animi?...",
-    author: "ANOTHER CLIENT",
-  },
-  {
-    id: 3,
-    text: "Yet another testimonial goes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quia quaerat ad ullam. Mollitia fuga omnis commodi deleniti, eligendi sapiente? Molestiae alias enim optio sint at blanditiis ab magnam assumenda porro. Quo officiis nemo, optio quas asperiores accusamus id repudiandae velit doloribus porro, ex sequi fugiat odit dolore sunt animi?...",
-    author: "YET ANOTHER CLIENT",
-  },
+  // {
+  //   id: 2,
+  //   text: "Another testimonial goes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quia quaerat ad ullam. Mollitia fuga omnis commodi deleniti, eligendi sapiente? Molestiae alias enim optio sint at blanditiis ab magnam assumenda porro. Quo officiis nemo, optio quas asperiores accusamus id repudiandae velit doloribus porro, ex sequi fugiat odit dolore sunt animi?...",
+  //   author: "ANOTHER CLIENT",
+  // },
+  // {
+  //   id: 3,
+  //   text: "Yet another testimonial goes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quia quaerat ad ullam. Mollitia fuga omnis commodi deleniti, eligendi sapiente? Molestiae alias enim optio sint at blanditiis ab magnam assumenda porro. Quo officiis nemo, optio quas asperiores accusamus id repudiandae velit doloribus porro, ex sequi fugiat odit dolore sunt animi?...",
+  //   author: "YET ANOTHER CLIENT",
+  // },
 ];
 
 const Testimonial = () => {

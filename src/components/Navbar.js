@@ -3,13 +3,27 @@ import { useState } from "react";
 import { NavList } from "../../lib/NavList";
 import ScrollToTopButton from "./ScrollToTopButton";
 import DesktopViewButton from "./DesktopViewButton ";
+import { useEffect } from "react";
 
 function Navbar() {
   const [showList, setShowList] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const toggleList = () => {
+    setIsAnimating(true);
     setShowList((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (showList) {
+      // Delay the removal of the element to preserve the transition animation
+      const timeout = setTimeout(() => {
+        setIsAnimating(false);
+      }, 300); // Adjust the timeout duration based on your transition duration
+
+      return () => clearTimeout(timeout);
+    }
+  }, [showList]);
 
   return (
     <>
@@ -94,7 +108,7 @@ function Navbar() {
           </div>
         </div>
         {/* Mobile menu */}
-        <div className={`${showList ? "block" : "hidden"} md:hidden`}>
+        {/* <div className={`${showList ? "block" : "hidden"} md:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {NavList.map((elem) => (
               <Link
@@ -106,7 +120,27 @@ function Navbar() {
               </Link>
             ))}
           </div>
+        </div> */}
+        <div
+          className={`md:hidden transition-transform ${
+            showList ? "translate-x-0" : "-translate-x-full"
+          } ${isAnimating ? "ease-in-out duration-300" : ""}`}
+        >
+          {showList && (
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {NavList.map((elem) => (
+                <Link
+                  key={elem.text}
+                  href={elem.url || "#"}
+                  className="text-white no-underline text-lg hover:text-gray-400 block px-3 py-2 rounded-md font-josefin_bold font-medium"
+                >
+                  {elem.text}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
+
         <ScrollToTopButton />
         <DesktopViewButton />
       </nav>
