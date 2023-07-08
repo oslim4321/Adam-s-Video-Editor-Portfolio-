@@ -134,47 +134,98 @@ function HelpfullTipsComp() {
 }
 
 function Question() {
+  const faqs = [
+    {
+      id: "1",
+      question: "What services do you offer?",
+      answer:
+        "We offer a wide range of Video Production Services, including Concept development, Filming, Editing, Motion graphics, and more. Whether you need a corporate video, commercial, documentary, or any other type of video content, we've got you covered.",
+    },
+    {
+      id: "2",
+      question: "How much does video production cost?",
+      answer:
+        "The cost of video production varies depending on the Project's complexity, duration, location, and specific requirements. We provide personalized quotes tailored to your unique needs. Contact us with your project details, and we'll be happy to provide you with a detailed estimate.",
+    },
+    {
+      id: "3",
+      question: "How long does the video production process take?",
+      answer:
+        "The timeline for video production depends on various factors, such as the scope of the project, the availability of resources, and the post-production requirements. It can range from a few days for a simple video to several weeks for more complex productions. We work closely with our clients to establish realistic timelines and ensure efficient project delivery.",
+    },
+    {
+      id: "4",
+      question: "Can you help with Concept development and scriptwriting?",
+      answer:
+        "Absolutely! Our team of experienced professionals excels in concept development and scriptwriting. We work closely with our clients to understand their goals, target audience, and key messaging. From there, we develop compelling concepts and craft engaging scripts that effectively convey your message and captivate your viewers.",
+    },
+    {
+      id: "5",
+      question: "Do you provide Video editing services?",
+      answer:
+        "Yes, video editing is one of our core services. Our skilled editors bring your footage to life, incorporating visual effects, transitions, music, and sound design to create a polished and professional final product. We ensure that the editing process aligns with your vision and objectives.",
+    },
+    {
+      id: "6",
+      question: "Can you handle location scouting?",
+      answer:
+        "Absolutely! We have a dedicated team that can assist with location scouting, finding the perfect settings for your video shoot and making all commitments needed to make using it realistic.",
+    },
+    {
+      id: "7",
+      question: "What type of equipment do you use?",
+      answer:
+        "We utilize state-of-the-art video production equipment, including high-definition cameras, professional lighting setups, and advanced audio recording tools. Our equipment is regularly maintained to ensure optimal performance and deliver exceptional video quality.",
+    },
+    {
+      id: "",
+      question: "Can you help with distribution and promotion of the videos?",
+      answer:
+        "While our primary focus is Video production, we can provide guidance and recommendations on video distribution and promotion strategies. We can assist you in choosing the right platforms, optimizing your videos for online channels, and leveraging social media and other marketing avenues to maximize the reach and impact of your videos.",
+    },
+    {
+      id: "8",
+      question: "Do you offer revisions or changes to the final video?",
+      answer:
+        "Yes, we understand that revisions may be necessary to ensure your complete satisfaction. We provide a revision process where you can provide feedback and request changes to the final video. We work closely with you to make the necessary adjustments until you are happy with the result. There’s a specific number of revisions that would be had before extra charges can be incurred.",
+    },
+  ];
   return (
     <div className="flex flex-col gap-y-4">
-      <div className="accordion" id="accordionExample">
-        <div className="accordion-item">
-          {/* <h1>FAQ</h1> */}
-          <h2 className="accordion-header">
-            <button
-              className="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
+      <div
+        className="accordion h-[49vh] overflow-y-scroll no-scrollbar-white"
+        id="accordionExample"
+      >
+        {faqs.map((elem, i) => (
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button text-black "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target={`#collapseOne${i}`}
+                aria-expanded="true"
+                aria-controls={`collapseOne${i}`}
+              >
+                {elem.question}
+              </button>
+            </h2>
+            <div
+              id={`collapseOne${i}`}
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
             >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            className="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classNamees that we use to style each element. These classNamees
-              control the overall appearance, as well as the showing and hiding
-              via CSS transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <div className="accordion-body">{elem.answer}</div>
             </div>
           </div>
-        </div>
-        <div className="accordion-item">
+        ))}
+        {/* <div className="accordion-item">
           <h2 className="accordion-header">
             <button
               className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
+              data-bs-target={`#collapseTwo`}
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
@@ -182,7 +233,7 @@ function Question() {
             </button>
           </h2>
           <div
-            id="collapseTwo"
+            id={`collapseTwo`}
             className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
@@ -197,8 +248,8 @@ function Question() {
               though the transition does limit overflow.
             </div>
           </div>
-        </div>
-        <div className="accordion-item">
+        </div> */}
+        {/* <div className="accordion-item">
           <h2 className="accordion-header">
             <button
               className="accordion-button collapsed"
@@ -227,7 +278,7 @@ function Question() {
               though the transition does limit overflow.
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
